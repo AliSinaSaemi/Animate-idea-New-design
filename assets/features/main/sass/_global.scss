@@ -1,0 +1,168 @@
+/***************************** 
+
+          GLOBAL
+
+********************************/
+
+body {
+  margin: 0;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.index-1 {
+  z-index: 1
+}
+
+.index-2 {
+  z-index: 2
+}
+
+.index-3 {
+  z-index: 3
+}
+
+.white {
+  color: #fff !important;
+}
+
+.center-absolute {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.l-title {
+  hr {
+    width: 20%;
+    border: 1px solid #c5c5c5;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+input,
+a,
+span,
+strong,
+em,
+i,
+b,
+li {
+  direction: rtl;
+  font-family: 'IRANSans';
+  text-align: right;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text-jutify {
+  text-align: justify;
+}
+
+h1.heading-style-1,
+h2.heading-style-1,
+h3.heading-style-1,
+h4.heading-style-1,
+h5.heading-style-1,
+h6.heading-style-1 {
+  font-size: 35px;
+  line-height: 46px;
+  margin-bottom: 29px;
+  @extend .text_bold;
+}
+
+h1.heading-style-2,
+h2.heading-style-2,
+h3.heading-style-2,
+h4.heading-style-2,
+h5.heading-style-2,
+h6.heading-style-2 {
+  font-size: 29px;
+  line-height: 67.5px;
+  margin-bottom: 20px;
+  @extend .text_bold;
+}
+
+h1.heading-style-3,
+h2.heading-style-3,
+h3.heading-style-3,
+h4.heading-style-3,
+h5.heading-style-3,
+h6.heading-style-3 {
+  font-size: 23px;
+  line-height: 52.5px;
+  margin-bottom: 20px;
+  @extend .text_bold;
+}
+
+h1.heading-style-4,
+h2.heading-style-4,
+h3.heading-style-4,
+h4.heading-style-4,
+h5.heading-style-4,
+h6.heading-style-4 {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  @extend .text_bold;
+}
+
+h1.heading-style-5,
+h2.heading-style-5,
+h3.heading-style-5,
+h4.heading-style-5,
+h5.heading-style-5,
+h6.heading-style-5 {
+  font: bold 16px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 11px;
+  @extend .text_bold;
+}
+
+h1.heading-style-6,
+h2.heading-style-6,
+h3.heading-style-6,
+h4.heading-style-6,
+h5.heading-style-6,
+h6.heading-style-6 {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  @extend .text_bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  text-align: right;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-blc {
+  display: block
+}
