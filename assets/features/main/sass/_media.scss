@@ -1,0 +1,15 @@
+$max_576px: '(max-width: 576px)';
+$min_576px: '(min-width: 576px)';
+$max_768px: '(max-width: 768px)';
+$min_768px: '(min-width: 768px)';
+$max_992px: '(max-width: 992px)';
+$min_992px: '(min-width: 992px)';
+$max_1200px: '(max-width: 1200px)';
+$min_1200px: '(min-width: 1200px)';
+
+
+@media #{$min_768px} {
+  .navbar-header {
+    float: left;
+  }
+}
