@@ -5,20 +5,38 @@ Header
 ---------------------------------------------------*/
 
 .navbar-brand {
-  > img {
+  >img {
     margin-top: 20px;
     width: 220px;
+    transition: .4s;
+  }
+}
+
+.wrap-sticky {
+  nav.navbar.bootsnav.sticked {
+    background-color: #f3f3f3e8;
+    .navbar-brand {
+      >img {
+        margin-top: 0px;
+        width: 125px;
+      }
+    }
   }
 }
 
 nav.navbar.bootsnav {
+  position: fixed;
+  z-index: 2000 !important;
+  border-bottom: none;
+  background-color: transparent;
+  transition: .4s;
   .container-fluid {
     margin: auto 30px;
   }
   ul.nav {
-    > li {
+    >li {
       &.active {
-        > a {
+        >a {
           color: #4A69BD;
           &:before {
             width: 100%;
@@ -26,12 +44,13 @@ nav.navbar.bootsnav {
           }
         }
       }
-      > a {
+      >a {
         font-weight: 400;
         padding: 10px 15px;
         margin: 30px 0;
         font-size: 12px;
         position: relative;
+        font-family: 'IRANSans';
         &:before {
           content: "";
           transition: .4s;
@@ -58,11 +77,12 @@ nav.navbar.bootsnav {
   .attr-nav {
     float: left;
     font-size: 12px;
-    > ul {
-      > li {
+    >ul {
+      >li {
         &.link {
-          > a {
+          >a {
             text-decoration: none;
+            font-family: 'IRANSans';
             &:before {
               content: "";
               transition: .4s;
@@ -77,7 +97,7 @@ nav.navbar.bootsnav {
               margin: auto;
             }
           }
-          > a:hover {
+          >a:hover {
             color: #4A69BD;
             &:before {
               width: 100%;
@@ -85,7 +105,7 @@ nav.navbar.bootsnav {
             }
           }
         }
-        > a {
+        >a {
           transition: .4s;
           padding: 10px 15px;
           margin: 30px 0;

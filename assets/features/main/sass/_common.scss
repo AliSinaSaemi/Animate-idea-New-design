@@ -1,0 +1,34 @@
+.bg-1 {
+  background-image: url(../../../img/backgrounds/BG-01-01.png);
+  background-attachment: inherit;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.fancy-btn {
+  background: #1e5799;
+  background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  background: -webkit-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  color: #fff;
+  font-family: 'samim';
+  border: none;
+  padding: 13px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  &:focus,
+  &:hover {
+    color: #fff !important;
+  }
+  &:focus {
+    background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+    background: -webkit-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+    background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+    box-shadow: none !important;
+    text-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    border: none !important;
+  }
+}
