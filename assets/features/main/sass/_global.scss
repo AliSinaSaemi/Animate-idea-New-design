@@ -166,6 +166,18 @@ h6 {
   display: block
 }
 
+.display-flex {
+  display: flex;
+}
+
+.flex-r {
+  flex-direction: row;
+}
+
+.flex-rr {
+  flex-direction: row-reverse;
+}
+
 .samim-font {
   font-family: 'samim'
 }

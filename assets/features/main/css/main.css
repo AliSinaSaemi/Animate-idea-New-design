@@ -166,6 +166,15 @@ h6 {
 .dis-blc {
   display: block; }
 
+.display-flex {
+  display: flex; }
+
+.flex-r {
+  flex-direction: row; }
+
+.flex-rr {
+  flex-direction: row-reverse; }
+
 .samim-font {
   font-family: "samim"; }
 
@@ -258,8 +267,121 @@ nav.navbar.bootsnav {
       nav.navbar.bootsnav .attr-nav > ul > li > a:hover {
         color: #4A69BD; }
 
-h1 {
-  font-family: 'samim'; }
+.all-types {
+  padding: 150px 0;
+  background-color: #f4f3f2; }
+  .all-types .item-1 {
+    width: 270px;
+    bottom: -95px;
+    right: -75px; }
+  .all-types .item-2 {
+    width: 200px;
+    left: -50px;
+    top: -35px; }
+  .all-types .item-3 {
+    width: 150px;
+    right: 30%;
+    top: -60px; }
+  .all-types .item-4 {
+    width: 100px;
+    right: 50%;
+    bottom: 0; }
+  .all-types .genius-type,
+  .all-types .normal-type {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0 0 21px #9c9c9c;
+    margin: 10px; }
+    .all-types .genius-type .title,
+    .all-types .normal-type .title {
+      font-family: 'samim';
+      font-size: 19px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      color: #1A1A1A;
+      margin-top: 0; }
+    .all-types .genius-type p,
+    .all-types .normal-type p {
+      text-align: center;
+      font-family: 'IRANSans';
+      font-size: 12px;
+      line-height: 25px;
+      color: #1A1A1A;
+      font-weight: 500; }
+      .all-types .genius-type p.warning,
+      .all-types .normal-type p.warning {
+        color: #999999 !important;
+        font-size: 11px; }
+      .all-types .genius-type p .important,
+      .all-types .normal-type p .important {
+        color: #fd8686; }
+    .all-types .genius-type img,
+    .all-types .normal-type img {
+      width: 170px;
+      position: absolute;
+      top: -85px; }
+  .all-types .normal-type {
+    margin-right: 80px;
+    padding-bottom: 109px; }
+    .all-types .normal-type .title {
+      text-align: right;
+      margin-right: 100px; }
+    .all-types .normal-type img {
+      right: -55px; }
+  .all-types .genius-type {
+    margin-left: 80px; }
+    .all-types .genius-type .title {
+      text-align: left;
+      margin-left: 100px; }
+    .all-types .genius-type img {
+      left: -55px; }
+
+.skills-landing {
+  padding: 300px 0;
+  background-image: url(../../../img/backgrounds/BG-02-01.png);
+  background-attachment: inherit;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: top; }
+  .skills-landing .row .col-md-5:last-child {
+    margin-top: 20px; }
+  .skills-landing .content {
+    width: 55%; }
+  .skills-landing img {
+    width: 45%; }
+  .skills-landing .content .title {
+    font-family: lalezar;
+    color: #333333;
+    font-size: 22px; }
+  .skills-landing .content p {
+    font-family: 'IRANSans';
+    color: #1A1A1A;
+    line-height: 30px;
+    font-size: 12px; }
+
+.todo-landing {
+  padding: 20px;
+  background-color: #f4f3f2; }
+  .todo-landing .content {
+    width: 70%; }
+    .todo-landing .content .title {
+      font-family: 'samim';
+      font-size: 20px;
+      color: #4A69BD;
+      margin-top: 35px;
+      margin-bottom: 20px; }
+    .todo-landing .content p {
+      font-family: 'IRANSans';
+      font-size: 12px;
+      color: #4D4D4D;
+      line-height: 25px;
+      font-weight: 500; }
+  .todo-landing img {
+    width: 30%; }
+  .todo-landing .fancy-divider {
+    margin-top: 100px; }
 
 @media (min-width: 768px) {
   .navbar-header {
@@ -267,7 +389,8 @@ h1 {
 .banner {
   padding: 150px 0;
   margin-top: -100px;
-  transition: .4s; }
+  transition: .4s;
+  z-index: 1; }
   .banner h4 {
     color: #4A69BD;
     line-height: 50px;
@@ -279,6 +402,9 @@ h1 {
     margin-top: 100px;
     margin-right: auto;
     display: block; }
+
+main {
+  overflow: hidden; }
 
 .bg-1 {
   background-image: url(../../../img/backgrounds/BG-01-01.png);
@@ -309,5 +435,26 @@ h1 {
     outline: none !important;
     text-decoration: none !important;
     border: none !important; }
+
+.circle-bg {
+  position: relative; }
+  .circle-bg .circle {
+    position: absolute; }
+
+.fancy-divider {
+  background: #1e5799;
+  background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  background: -webkit-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  width: 100%;
+  height: 1.5px; }
+
+.sponsers {
+  background-color: #f4f3f2;
+  padding: 20px; }
+  .sponsers img {
+    width: 100px; }
+    .sponsers img.navabeq {
+      width: 70px; }
 
 /*# sourceMappingURL=main.css.map */

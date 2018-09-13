@@ -1,3 +1,143 @@
-h1 {
-    font-family: 'samim';
+.all-types {
+  padding: 150px 0;
+  background-color: #f4f3f2;
+  .item-1 {
+    width: 270px;
+    bottom: -95px;
+    right: -75px;
+  }
+  .item-2 {
+    width: 200px;
+    left: -50px;
+    top: -35px;
+  }
+  .item-3 {
+    width: 150px;
+    right: 30%;
+    top: -60px;
+  }
+  .item-4 {
+    width: 100px;
+    right: 50%;
+    bottom: 0
+  }
+  .genius-type,
+  .normal-type {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0 0 21px #9c9c9c;
+    margin: 10px;
+    .title {
+      font-family: 'samim';
+      font-size: 19px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      color: #1A1A1A;
+      margin-top: 0;
+    }
+    p {
+      &.warning {
+        color: #999999 !important;
+        font-size: 11px;
+      }
+      .important {
+        color: #fd8686;
+      }
+      text-align: center;
+      font-family: 'IRANSans';
+      font-size: 12px;
+      line-height: 25px;
+      color: #1A1A1A;
+      font-weight: 500;
+    }
+    img {
+      width: 170px;
+      position: absolute;
+      top: -85px;
+    }
+  }
+  .normal-type {
+    margin-right: 80px;
+    padding-bottom: 109px;
+    .title {
+      text-align: right;
+      margin-right: 100px;
+    }
+    img {
+      right: -55px;
+    }
+  }
+  .genius-type {
+    margin-left: 80px;
+    .title {
+      text-align: left;
+      margin-left: 100px;
+    }
+    img {
+      left: -55px;
+    }
+  }
+}
+
+.skills-landing {
+  .row {
+    .col-md-5:last-child {
+      margin-top: 20px;
+    }
+  }
+  padding: 300px 0;
+  background-image: url(../../../img/backgrounds/BG-02-01.png);
+  background-attachment: inherit;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: top;
+  .content {
+    width: 55%;
+  }
+  img {
+    width: 45%;
+  }
+  .content {
+    .title {
+      font-family: lalezar;
+      color: #333333;
+      font-size: 22px;
+    }
+    p {
+      font-family: 'IRANSans';
+      color: #1A1A1A;
+      line-height: 30px;
+      font-size: 12px;
+    }
+  }
+}
+
+.todo-landing {
+  padding: 20px;
+  background-color: #f4f3f2;
+  .content {
+    width: 70%;
+    .title {
+      font-family: 'samim';
+      font-size: 20px;
+      color: #4A69BD;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'IRANSans';
+      font-size: 12px;
+      color: #4D4D4D;
+      line-height: 25px;
+      font-weight: 500;
+    }
+  }
+  img {
+    width: 30%;
+  }
+  .fancy-divider {
+    margin-top: 100px;
+  }
 }
