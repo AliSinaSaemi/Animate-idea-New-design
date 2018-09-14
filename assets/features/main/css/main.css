@@ -268,24 +268,25 @@ nav.navbar.bootsnav {
         color: #4A69BD; }
 
 .all-types {
-  padding: 150px 0;
-  background-color: #f4f3f2; }
+  padding: 60px 0;
+  background-color: #f4f3f2;
+  margin-bottom: -25px; }
   .all-types .item-1 {
-    width: 270px;
-    bottom: -95px;
+    width: 235px;
+    bottom: -165px;
     right: -75px; }
   .all-types .item-2 {
     width: 200px;
     left: -50px;
-    top: -35px; }
+    top: -150px; }
   .all-types .item-3 {
-    width: 150px;
-    right: 30%;
-    top: -60px; }
+    width: 85px;
+    right: 21%;
+    top: -130px; }
   .all-types .item-4 {
     width: 100px;
     right: 50%;
-    bottom: 0; }
+    bottom: -100px; }
   .all-types .genius-type,
   .all-types .normal-type {
     position: relative;
@@ -323,8 +324,9 @@ nav.navbar.bootsnav {
       position: absolute;
       top: -85px; }
   .all-types .normal-type {
-    margin-right: 80px;
-    padding-bottom: 109px; }
+    margin-right: 80px; }
+    .all-types .normal-type .warning {
+      opacity: 0; }
     .all-types .normal-type .title {
       text-align: right;
       margin-right: 100px; }
@@ -342,11 +344,13 @@ nav.navbar.bootsnav {
   padding: 300px 0;
   background-image: url(../../../img/backgrounds/BG-02-01.png);
   background-attachment: inherit;
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: top; }
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: -205px;
+  margin-top: -245px; }
   .skills-landing .row .col-md-5:last-child {
-    margin-top: 20px; }
+    margin-top: 40px; }
   .skills-landing .content {
     width: 55%; }
   .skills-landing img {
@@ -362,8 +366,32 @@ nav.navbar.bootsnav {
     font-size: 12px; }
 
 .todo-landing {
-  padding: 20px;
-  background-color: #f4f3f2; }
+  background-color: #f4f3f2;
+  margin-top: -65px; }
+  .todo-landing .item-1 {
+    width: 210px;
+    left: -65px;
+    top: -105px; }
+  .todo-landing .item-2 {
+    width: 80px;
+    right: 25%;
+    top: -164px; }
+  .todo-landing .item-3 {
+    width: 70px;
+    right: 10%;
+    top: 25%; }
+  .todo-landing .item-4 {
+    width: 60px;
+    left: 28%;
+    top: -15px; }
+  .todo-landing .item-5 {
+    width: 200px;
+    right: -50px;
+    bottom: 5px; }
+  .todo-landing .item-6 {
+    width: 100px;
+    left: 20%;
+    bottom: 50px; }
   .todo-landing .content {
     width: 70%; }
     .todo-landing .content .title {
@@ -390,7 +418,8 @@ nav.navbar.bootsnav {
   padding: 150px 0;
   margin-top: -100px;
   transition: .4s;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: -125px; }
   .banner h4 {
     color: #4A69BD;
     line-height: 50px;
