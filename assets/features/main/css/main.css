@@ -268,7 +268,8 @@ nav.navbar.bootsnav {
         color: #4A69BD; }
 
 .all-types {
-  padding: 60px 0;
+  padding: 85px 0;
+  padding-top: 100px;
   background-color: #f4f3f2;
   margin-bottom: -25px; }
   .all-types .item-1 {
@@ -342,11 +343,6 @@ nav.navbar.bootsnav {
 
 .skills-landing {
   padding: 300px 0;
-  background-image: url(../../../img/backgrounds/BG-02-01.png);
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
   margin-bottom: -205px;
   margin-top: -245px; }
   .skills-landing .row .col-md-5:last-child {
@@ -411,6 +407,98 @@ nav.navbar.bootsnav {
   .todo-landing .fancy-divider {
     margin-top: 100px; }
 
+footer {
+  padding: 20px; }
+  footer .information .brand {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 2;
+    height: 100px;
+    box-shadow: 0px 0px 15px #67a0a9;
+    position: relative; }
+    footer .information .brand h3 {
+      color: #4A69BD;
+      width: 70%;
+      font-size: 18px;
+      font-family: 'IRANSans';
+      font-weight: 500;
+      margin-top: 30px; }
+    footer .information .brand img {
+      width: 30%; }
+  footer .information .content {
+    padding: 15px;
+    margin: 20px;
+    margin-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px #ababab;
+    background-color: #fff;
+    z-index: 1; }
+    footer .information .content p {
+      font-size: 13px;
+      font-family: 'IRANSans';
+      text-align: center;
+      line-height: 25px; }
+    footer .information .content a {
+      padding: 5px 20px;
+      font-size: 11px;
+      margin: auto;
+      display: block;
+      width: 75px; }
+  footer .contact-us {
+    font-family: 'IRANSans';
+    font-size: 10px;
+    margin-top: 40px; }
+    footer .contact-us h4 {
+      font-weight: 500;
+      color: #4A69BD; }
+    footer .contact-us ul li {
+      margin-top: 20px;
+      margin-left: 15px;
+      position: relative; }
+      footer .contact-us ul li:after {
+        position: absolute;
+        font-family: FontAwesome;
+        color: #4A69BD;
+        font-size: 20px;
+        right: -20px;
+        top: -7px; }
+      footer .contact-us ul li:nth-child(1):after {
+        content: "\f041"; }
+      footer .contact-us ul li:nth-child(2):after, footer .contact-us ul li:nth-child(3):after {
+        content: "\f095";
+        font-size: 15px;
+        top: -2px; }
+      footer .contact-us ul li:nth-child(4):after {
+        content: "\f003";
+        font-size: 15px;
+        right: -22px;
+        bottom: -5px; }
+      footer .contact-us ul li p {
+        font-weight: 500;
+        color: #4A69BD; }
+        footer .contact-us ul li p.phone-number {
+          font-size: 13px; }
+      footer .contact-us ul li a:hover {
+        text-decoration: none; }
+
+.copyright {
+  background-color: #292f38;
+  padding: 15px 0; }
+  .copyright ul {
+    margin-bottom: 0; }
+    .copyright ul li a {
+      color: #fff;
+      font-size: 20px; }
+  .copyright p {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 5px; }
+
 @media (min-width: 768px) {
   .navbar-header {
     float: left; } }
@@ -441,6 +529,20 @@ main {
   background-repeat: repeat;
   background-size: cover;
   background-position: center center; }
+
+.bg-2 {
+  background-image: url(../../../img/backgrounds/BG-02-01.png);
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; }
+
+.bg-3 {
+  background-image: url(../../../img/backgrounds/BG-03-01.png);
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; }
 
 .fancy-btn {
   background: #1e5799;
@@ -485,5 +587,20 @@ main {
     width: 100px; }
     .sponsers img.navabeq {
       width: 70px; }
+
+.traveller {
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #e24b70;
+  position: absolute;
+  left: 25%;
+  bottom: -60px; }
+  .traveller:focus, .traveller:hover {
+    background-color: #e24b70;
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

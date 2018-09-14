@@ -10,6 +10,21 @@ main {
   background-position: center center;
 }
 
+.bg-2 {
+  background-image: url(../../../img/backgrounds/BG-02-01.png);
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.bg-3 {
+  background-image: url(../../../img/backgrounds/BG-03-01.png);
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 .fancy-btn {
   background: #1e5799;
   background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
@@ -45,7 +60,7 @@ main {
 }
 
 .fancy-divider {
-    background: #1e5799;
+  background: #1e5799;
   background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
   background: -webkit-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
   background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
@@ -62,5 +77,22 @@ main {
       width: 70px;
     }
   }
-  
+}
+
+.traveller {
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #e24b70;
+  position: absolute;
+  left: 25%;
+  bottom: -60px;
+  &:focus,
+  &:hover {
+    background-color: #e24b70;
+    color: #fff;
+  }
 }
