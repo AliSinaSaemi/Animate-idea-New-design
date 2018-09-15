@@ -17,6 +17,7 @@ main {
   background-size: contain;
   background-position: center center;
 }
+
 .bg-3 {
   background-image: url(../../../img/backgrounds/BG-03-01.png);
   background-attachment: inherit;
@@ -76,6 +77,33 @@ main {
     &.navabeq {
       width: 70px;
     }
+  }
+}
+
+.sponsers-slider {
+  background-color: #f4f3f2;
+  padding: 20px;
+  .item {
+    img {
+      width: 200px;
+      position: relative;
+      &.navabeq {
+        width: 130px;
+        right: 18px;
+      }      
+      &.animate-idea {
+        right: 25px;
+      }
+    }
+  }
+}
+
+#owl-one {
+  .owl-nav {
+    display: none;
+  }
+  .owl-dots {
+    margin-top: 25px;
   }
 }
 

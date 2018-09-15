@@ -64,6 +64,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
+            <li class="hidden-md hidden-lg iransans-font">
+              <input class="form-control" type="text" placeholder="جستجو کنید ...">
+            </li>
             <li class="active"><a href="#">خانه</a></li>
             <li><a href="#">نونه کار</a></li>
             <li><a href="#">درباره ما</a></li>
@@ -81,15 +84,14 @@
   <div class="banner bg-1">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-5 col-md-6">
           <img src="assets/img/thumbs/landind.svg" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-7 col-md-6">
           <h4 class="lalezar-font heading-style-2"> انیمیتد آیدیا محصول ، خدمات و ثبت اختراع خود را
 به صورت انیمیش  در شبکه های اجتماعی ن
 به مخاطبانتان معر کنید.</h4>
           <button class="btn btn-default samim-font fancy-btn">ثبت سفارش</button>
-
         </div>
       </div>
       <!-- ./row -->
@@ -110,13 +112,12 @@
       <img class="circle item-4" src="assets/img/icons/4.svg" alt="">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-
+          <div class="col-md-6 hidden-sm hidden-xs">
             <div class="genius-type">
               <img src="assets/img/characters/character-1.svg" alt="">
               <h3 class="title">عضو حامی نوابغ جوان هستم</h3>
               <p>
-                برای افرادی که <span class="important">عضو حامی نوابغ جوان</span> هستند ، علاوه بر تخفیف ویزه به آن ها یک بار مشاوره رایگان در رابطه با شیوه پخش کلیپ انیمیشنی داده می شود.
+                برای افرادی که <a href="#" class="important">عضو حامی نوابغ جوان</a> هستند ، علاوه بر تخفیف ویزه به آن ها یک بار مشاوره رایگان در رابطه با شیوه پخش کلیپ انیمیشنی داده می شود.
               </p>
               <p class="warning">
                 *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
@@ -124,7 +125,7 @@
             </div>
             <!-- ./genius-type -->
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 hidden-sm hidden-xs">
 
             <div class="normal-type">
               <img src="assets/img/characters/character-2.svg" alt="">
@@ -138,6 +139,36 @@
             </div>
             <!-- ./normal-type -->
           </div>
+
+          <div class="col-md-6 hidden-md hidden-lg">
+
+            <div class="normal-type">
+              <img src="assets/img/characters/character-1.svg" alt="">
+              <h3 class="title">عضو حامی نوابغ جوان هستم</h3>
+              <p>
+                برای افرادی که <a href="#" class="important">عضو حامی نوابغ جوان</a> هستند ، علاوه بر تخفیف ویزه به آن ها یک بار مشاوره رایگان در رابطه با شیوه پخش کلیپ انیمیشنی داده می شود.
+              </p>
+              <p class="warning opacity-1">
+                *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
+              </p>
+            </div>
+            <!-- ./normal-type -->
+          </div>
+
+          <div class="col-md-6 hidden-md hidden-lg">
+            <div class="genius-type">
+              <img src="assets/img/characters/character-2.svg" alt="">
+
+              <h3 class="title">عضو حامی نوابغ جوان نیستم</h3>
+              <p>
+                افرادی که شرایط نوابغ را ندارند نیز می توانند با مطالعه ی برنامه ی درآمدزایی پنل از خدمات ما استفاده کنند (در حال به روز رسانی . )
+              </p>
+              <p class="warning opacity-0">
+                *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
+              </p>
+            </div>
+            <!-- ./genius-type -->
+          </div>
         </div>
         <!-- ./row -->
       </div>
@@ -146,8 +177,8 @@
     <!-- ./all-types -->
     <img class="img-responsive wave-bottom" src="assets/img/backgrounds/wave-2-01.png" alt="">
 
-    <div class="skills-landing bg-2">
-      <div class="container">
+    <div class="skills-landing bg-2 ">
+      <div class="container hidden-xs">
         <div class="row">
           <div class="col-md-5">
 
@@ -186,11 +217,40 @@
         </div>
         <!-- ./row -->
       </div>
+      <div id="owl-two" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="display-flex flex-r">
+            <img src="assets/img/icons/9.svg" alt="">
+            <div class="content">
+              <h3 class="title">حفظ سرمایه</h3>
+              <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="display-flex flex-r">
+            <img src="assets/img/icons/10.svg" alt="">
+            <div class="content">
+              <h3 class="title">حفظ سرمایه</h3>
+              <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="display-flex flex-r">
+            <img src="assets/img/icons/11.svg" alt="">
+            <div class="content">
+              <h3 class="title">حفظ سرمایه</h3>
+              <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ./container -->
     </div>
     <!-- ./skills-landing -->
 
-    <img class="img-responsive wave-top" src="assets/img/backgrounds/wave-1-01.png" alt="">
+    <img class="img-responsive wave-top" src="assets/img/backgrounds/wave-1-01.png" alt="" />
     <div class="todo-landing circle-bg">
       <img class="circle item-1" src="assets/img/icons/1.svg" alt="">
       <img class="circle item-2" src="assets/img/icons/1.svg" alt="">
@@ -203,7 +263,7 @@
         <div class="row">
           <div class="col-md-7">
             <div class="display-flex flex-r">
-              <img src="assets/img/icons/6.svg" alt="">
+              <img class="hidden-xs" src="assets/img/icons/6.svg" alt="">
               <div class="content">
                 <h3 class="title">۱ - ثبت نام</h3>
                 <p>پس از ثبت نام ، شما می توانید در پنل مدیریتی خود به راحتی پروژه های خود را مدیریت کنید. </p>
@@ -211,20 +271,22 @@
             </div>
           </div>
           <!-- ./col-md-7 -->
+          <div class="fancy-divider width-half center-block hidden-sm hidden-md hidden-lg"></div>
           <div class="col-md-5"></div>
           <div class="col-md-7 col-md-offset-5">
             <div class="display-flex flex-rr">
-              <img src="assets/img/icons/5.svg" alt="">
+              <img class="hidden-xs" src="assets/img/icons/5.svg" alt="">
               <div class="content">
                 <h3 class="title">۲ - ثبت سفارش و طراحی انیمیشن</h3>
                 <p>پس از ثبت سفارش خود در پنل مدیریتی ، تیم طراحی با دقت تمامی توضیحات و اطلاعاتی را که در داشبوردتان وارد کرده اید ، مطالعه کرده و با خلاقیت و ظرافت ، طراحی انیمیشن شما را آغاز می کنند.</p>
               </div>
             </div>
           </div>
+          <div class="fancy-divider width-half center-block hidden-sm hidden-md hidden-lg"></div>
           <!-- ./col-md-7 -->
           <div class="col-md-7">
             <div class="display-flex flex-r">
-              <img src="assets/img/icons/7.svg" alt="">
+              <img class="hidden-xs" src="assets/img/icons/7.svg" alt="">
               <div class="content">
                 <h3 class="title">۳ - تحویل پروژه</h3>
                 <p>در نهایت بعد از بررسی و طراحی انیمیشن ابتدا توسط ایمیل و تیکت به شما اطلاع داده می شود. بنابراین به راحتی می توانید سفارشتان را از پنل مدیریتیتان دانلود نماييد.</p>
@@ -235,22 +297,22 @@
           <div class="col-md-5"></div>
         </div>
         <!-- ./row -->
-        <div class="fancy-divider"></div>
+        <div class="fancy-divider bigger"></div>
       </div>
       <!-- ./container -->
     </div>
     <!-- ./todo-landing -->
 
-    <div class="sponsers">
+    <div class="sponsers hidden-xs">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <img class="center-block" src="assets/img/sponsors/animate%20logo.svg" alt="">
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <img class="center-block navabeq" src="assets/img/sponsors/navabeq.svg" alt="">
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <img class="center-block" src="assets/img/sponsors/sage%20logo.svg" alt="">
           </div>
         </div>
@@ -258,15 +320,29 @@
       </div>
       <!-- ./container -->
     </div>
-    <img class="img-responsive wave-bottom" src="assets/img/backgrounds/wave-4-01.png" alt="">
+
+    <div class="sponsers-slider hidden-sm hidden-md hidden-lg">
+      <div id="owl-one" class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="center-block animate-idea" src="assets/img/sponsors/animate%20logo.svg" alt="">
+        </div>
+        <div class="item">
+          <img class="center-block navabeq" src="assets/img/sponsors/navabeq.svg" alt="">
+        </div>
+        <div class="item">
+          <img class="center-block" src="assets/img/sponsors/sage%20logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <img class="img-responsive wave-bottom" src="assets/img/backgrounds/wave-4-01.png" alt="" />
 
   </main>
 
   <footer class="bg-3">
     <div class="container">
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
+        <div class="col-md-1 col-lg-2"></div>
+        <div class="col-md-4 col-lg-3">
           <div class="information">
             <div class="brand">
               <h3>درباره انیمیتدآیدیا</h3>
@@ -305,7 +381,7 @@
   <div class="copyright">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-6">
           <ul class="list-unstyled list-inline">
             <li>
               <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -318,7 +394,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-xs-6">
           <p class="text-left">Copyright 2018</p>
         </div>
       </div>
