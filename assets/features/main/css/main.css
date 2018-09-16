@@ -202,6 +202,9 @@ h6 {
 main {
   overflow: hidden; }
 
+.section {
+  background-color: #f4f3f2; }
+
 .bg-1 {
   background-image: url(../../../img/backgrounds/BG-01-01.png);
   background-attachment: inherit;
@@ -267,6 +270,13 @@ main {
     .sponsers img.navabeq {
       width: 70px; }
 
+.breadcrumbs h3 {
+  font-family: 'IRANSans'; }
+  .breadcrumbs h3 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px; }
+
 .sponsers-slider {
   background-color: #f4f3f2;
   padding: 20px; }
@@ -298,6 +308,23 @@ main {
   .traveller:focus, .traveller:hover {
     background-color: #e24b70;
     color: #fff; }
+
+.simple-circles .item-1 {
+  width: 235px;
+  right: -60px;
+  top: 0; }
+.simple-circles .item-2 {
+  width: 200px;
+  left: -15px;
+  top: 0; }
+.simple-circles .item-3 {
+  width: 140px;
+  left: 14%;
+  bottom: 125px; }
+.simple-circles .item-4 {
+  width: 103px;
+  right: 20%;
+  bottom: 103px; }
 
 /*---------------------------------------------------
 
@@ -391,6 +418,10 @@ nav.navbar.bootsnav {
   transition: .4s;
   z-index: 1;
   margin-bottom: -125px; }
+  .banner.banner-page {
+    margin-bottom: -250px; }
+    .banner.banner-page .traveller {
+      bottom: 60px; }
   .banner h4 {
     color: #4A69BD;
     line-height: 50px;
@@ -635,6 +666,81 @@ footer {
   .todo-landing .fancy-divider {
     margin-top: 100px; }
 
+#accordion {
+  padding-left: 75px;
+  position: relative;
+  z-index: 1; }
+  #accordion:before {
+    content: '';
+    width: 1px;
+    height: 91%;
+    background: #a22d1f;
+    position: absolute;
+    top: 0;
+    left: 21px;
+    z-index: -1; }
+  #accordion .panel {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 45px; }
+  #accordion .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    border: none; }
+  #accordion .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    font-family: 'IRANSans';
+    background-color: #f4f3f2; }
+    #accordion .panel-title a {
+      background-color: #f4f3f2;
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      color: #31162e;
+      padding: 10px 30px 15px 0;
+      position: relative;
+      line-height: 35px;
+      transition: all .5s ease 0s;
+      text-decoration: none;
+      font-family: 'IRANSans'; }
+      #accordion .panel-title a:before {
+        content: "\f013";
+        font-family: FontAwesome;
+        font-weight: 900;
+        font-size: 20px;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: .4s;
+        line-height: 40px;
+        text-align: center;
+        background: #a22d1f;
+        border: 1px solid #a22d1f;
+        position: absolute;
+        top: 0;
+        left: -74px; }
+  #accordion .panel-body {
+    background-color: #f4f3f2;
+    font-size: 14px;
+    color: #487677;
+    line-height: 25px;
+    padding: 5px 15px 15px 0;
+    border: none;
+    font-family: 'IRANSans'; }
+    #accordion .panel-body p {
+      margin-right: 15px; }
+
+.faq {
+  padding: 50px 0; }
+  .faq .fancy-divider {
+    margin-top: 100px;
+    margin-bottom: 20px; }
+
 @media (min-width: 768px) {
   .navbar-header {
     float: left; }
@@ -642,6 +748,9 @@ footer {
   #owl-two {
     display: none; } }
 @media (max-width: 1200px) {
+  .banner.banner-page .traveller {
+    bottom: 220px; }
+
   .banner h4 {
     margin-top: 85px;
     font-size: 25px;
@@ -683,7 +792,11 @@ footer {
   .todo-landing .item-2 {
     display: none; } }
 @media (max-width: 992px) {
+  .simple-circles .item-3 {
+    left: 10px; }
+
   .banner h4 {
+    text-align: center;
     margin-top: 40px;
     font-size: 20px;
     line-height: 40px; }
@@ -746,10 +859,17 @@ footer {
   footer .information {
     margin-top: 50px; } }
 @media (max-width: 768px) {
+  .banner.banner-page {
+    margin-bottom: -100px; }
+
   .banner img {
     width: 400px;
     margin: auto;
     display: block; }
+
+  #owl-one {
+    margin-bottom: -85px;
+    margin-top: -50px; }
 
   .all-types .normal-type,
   .all-types .genius-type {
@@ -823,7 +943,10 @@ footer {
     .skills-landing #owl-two .owl-nav {
       display: none; }
     .skills-landing #owl-two .owl-dots {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+
+  .faq.simple-circles .circle {
+    display: none; } }
 @media (max-width: 650px) {
   .skills-landing .item {
     padding: 0 50px; }
@@ -859,6 +982,8 @@ footer {
 
   .banner h4 {
     display: none; }
+    .banner h4.page-name {
+      display: block; }
   .banner button {
     margin-right: auto;
     margin-left: auto; }

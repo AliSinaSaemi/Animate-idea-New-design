@@ -2,6 +2,10 @@ main {
   overflow: hidden;
 }
 
+.section {
+  background-color: #f4f3f2;
+}
+
 .bg-1 {
   background-image: url(../../../img/backgrounds/BG-01-01.png);
   background-attachment: inherit;
@@ -80,6 +84,17 @@ main {
   }
 }
 
+.breadcrumbs {
+  h3 {
+    font-family: 'IRANSans';
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 15px;
+    }
+  }
+}
+
 .sponsers-slider {
   background-color: #f4f3f2;
   padding: 20px;
@@ -90,7 +105,7 @@ main {
       &.navabeq {
         width: 130px;
         right: 18px;
-      }      
+      }
       &.animate-idea {
         right: 25px;
       }
@@ -122,5 +137,28 @@ main {
   &:hover {
     background-color: #e24b70;
     color: #fff;
+  }
+}
+
+.simple-circles {
+  .item-1 {
+    width: 235px;
+    right: -60px;
+    top: 0;
+  }
+  .item-2 {
+    width: 200px;
+    left: -15px;
+    top: 0;
+  }
+  .item-3 {
+    width: 140px;
+    left: 14%;
+    bottom: 125px;
+  }
+  .item-4 {
+    width: 103px;
+    right: 20%;
+    bottom: 103px;
   }
 }

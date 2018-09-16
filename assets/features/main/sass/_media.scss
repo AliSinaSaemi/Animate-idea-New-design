@@ -16,6 +16,9 @@
   }
   
   @media #{$max_1200px} {
+    .banner.banner-page .traveller {
+      bottom: 220px;
+    }
     .banner {
       h4 {
         margin-top: 85px;
@@ -70,8 +73,14 @@
   }
   
   @media #{$max_992px} {
+    .simple-circles {
+      .item-3 {
+        left: 10px;
+      }
+    }
     .banner {
       h4 {
+        text-align: center;
         margin-top: 40px;
         font-size: 20px;
         line-height: 40px;
@@ -150,12 +159,19 @@
   }
   
   @media #{$max_768px} {
+    .banner.banner-page {
+      margin-bottom: -100px;
+    }
     .banner {
       img {
         width: 400px;
         margin: auto;
         display: block;
       }
+    }
+    #owl-one {
+      margin-bottom: -85px;
+      margin-top: -50px;
     }
     .all-types .normal-type,
     .all-types .genius-type {
@@ -251,6 +267,11 @@
         }
       }
     }
+    .faq.simple-circles {
+      .circle {
+        display: none;
+      }
+    }
   }
   
   @media (max-width: 650px) {
@@ -272,16 +293,18 @@
       text-align: right;
     }
   }
-
-@media (max-width: 550px) {
-  .wave-bottom {
-    display: none;
+  
+  @media (max-width: 550px) {
+    .wave-bottom {
+      display: none;
+    }
   }
-}@media (min-width: 550px) {
-  .wave-bottom-xs {
-    display: none;
+  
+  @media (min-width: 550px) {
+    .wave-bottom-xs {
+      display: none;
+    }
   }
-}
   
   @media (max-width: 500px) {
     .all-types {
@@ -301,6 +324,9 @@
     .banner {
       h4 {
         display: none;
+        &.page-name {
+          display: block;
+        }
       }
       button {
         margin-right: auto;
@@ -352,7 +378,6 @@
         margin: auto;
         display: block;
       }
-      
       .item {
         padding: 0 50px;
         .flex-r {

@@ -3,7 +3,13 @@
   margin-top: -100px;
   transition: .4s;
   z-index: 1;
-      margin-bottom: -125px;
+  margin-bottom: -125px;
+  &.banner-page {
+    margin-bottom: -250px;
+    .traveller {
+      bottom: 60px;
+    }
+  }
   h4 {
     color: #4A69BD;
     line-height: 50px;
