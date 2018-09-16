@@ -637,7 +637,10 @@ footer {
 
 @media (min-width: 768px) {
   .navbar-header {
-    float: left; } }
+    float: left; }
+
+  #owl-two {
+    display: none; } }
 @media (max-width: 1200px) {
   .banner h4 {
     margin-top: 85px;
@@ -835,6 +838,12 @@ footer {
 
   .all-types .genius-type .title {
     text-align: right; } }
+@media (max-width: 550px) {
+  .wave-bottom {
+    display: none; } }
+@media (min-width: 550px) {
+  .wave-bottom-xs {
+    display: none; } }
 @media (max-width: 500px) {
   .all-types {
     margin-bottom: 0; }
