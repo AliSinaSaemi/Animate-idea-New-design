@@ -70,12 +70,32 @@
         display: none;
       }
     }
+    .service-tariffs {
+      .content ul li p {
+        font-size: 11px;
+      }
+      .motion-graphic {
+        margin-top: -70px;
+        z-index: 3;
+        position: relative;
+      }
+    }
   }
   
   @media #{$max_992px} {
     .simple-circles {
       .item-3 {
         left: 10px;
+      }
+    }
+    .about-us {
+      .boy-bottom {
+        bottom: 0;
+        right: -40px;
+      }
+      .content {
+        margin: 0 20px;
+        padding: 40px;
       }
     }
     .banner {
@@ -155,6 +175,19 @@
     }
     footer .information {
       margin-top: 50px;
+    }
+    .about-us {
+      .boy-top,
+      .boy-bottom {
+        width: 110px;
+      }
+      .boy-top {
+        top: -110px;
+      }
+      .boy-bottom {
+        bottom: 10px;
+        right: -25px;
+      }
     }
   }
   
@@ -272,6 +305,35 @@
         display: none;
       }
     }
+    .service-tariffs {
+      .content {
+        padding: 15px;
+        padding-bottom: 150px;
+        ul li p {
+          margin-right: 0;
+        }
+      }
+      .motion-graphic {
+        margin-top: -12%;
+      }
+    }
+    nav.navbar.bootsnav .navbar-toggle {
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    .about-us {
+      .content {
+        > p {
+          font-size: 16px;
+          line-height: 40px;
+          text-align: justify;
+        }
+        h3 {
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+    }
   }
   
   @media (max-width: 650px) {
@@ -292,11 +354,46 @@
     .all-types .genius-type .title {
       text-align: right;
     }
+    .form-main {
+      margin: 0;
+      .form {
+        padding: 10px;
+        background-color: #fff;
+      }
+    }
   }
   
   @media (max-width: 550px) {
     .wave-bottom {
       display: none;
+    }
+    .service-tariffs {
+      .content {
+        ul {
+          li {
+            p {
+              line-height: 25px;
+            }
+          }
+        }
+        .title {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        h4 {
+          font-size: 18px;
+        }
+        .text {
+          font-size: 13px;
+          line-height: 30px;
+        }
+      }
+    }
+    .about-us {
+      .boy-top,
+      .boy-bottom {
+        display: none;
+      }
     }
   }
   
@@ -362,6 +459,15 @@
     .banner img {
       width: 70%;
     }
+    .about-us .fancy-btn-2 p {
+      width: 190px;
+      font-size: 14px;
+      margin: 2px;
+    }
+    .about-us .content {
+      margin: 0;
+      padding: 20px;
+    }
   }
   
   @media (max-width: 400px) {
@@ -384,5 +490,8 @@
           flex-direction: column;
         }
       }
+    }
+    .service-tariffs .content {
+      margin: 0 5px;
     }
   }

@@ -249,6 +249,33 @@ main {
     text-decoration: none !important;
     border: none !important; }
 
+.fancy-btn-2 {
+  background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+  color: #fff;
+  font-family: 'samim';
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  border-radius: 50px;
+  text-align: center; }
+  .fancy-btn-2:focus, .fancy-btn-2:hover {
+    color: #fff !important; }
+  .fancy-btn-2:focus {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    border: none !important; }
+  .fancy-btn-2 p {
+    background-color: #fff;
+    color: #4A69BD;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 1px;
+    width: 180px;
+    text-align: center;
+    border-radius: 50px; }
+
 .circle-bg {
   position: relative; }
   .circle-bg .circle {
@@ -325,6 +352,50 @@ main {
   width: 103px;
   right: 20%;
   bottom: 103px; }
+
+.form-main {
+  box-shadow: 0px 0px 15px #636363;
+  margin: 0 40px;
+  position: relative;
+  z-index: 2; }
+  .form-main .header-form {
+    background-color: #4A69BD; }
+    .form-main .header-form h3 {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+      padding: 40px;
+      font-family: 'samim';
+      color: #fff; }
+  .form-main .form {
+    padding: 40px;
+    background-color: #fff; }
+    .form-main .form input,
+    .form-main .form textarea {
+      padding: 20px 10px;
+      font-family: 'IRANSans';
+      border-radius: 0; }
+    .form-main .form input {
+      margin-bottom: 30px; }
+    .form-main .form textarea {
+      margin-bottom: 20px;
+      padding-top: 10px; }
+
+.section {
+  padding: 50px 0;
+  padding-top: 0; }
+  .section .fancy-divider {
+    margin-top: 100px;
+    margin-bottom: 20px; }
+
+.banner .page-name {
+  text-align: center; }
+
+.content {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #636363;
+  position: relative;
+  z-index: 2; }
 
 /*---------------------------------------------------
 
@@ -735,11 +806,81 @@ footer {
     #accordion .panel-body p {
       margin-right: 15px; }
 
-.faq {
-  padding: 50px 0; }
-  .faq .fancy-divider {
-    margin-top: 100px;
+.contact-us .fancy-divider {
+  margin-top: 150px; }
+
+.about-us {
+  padding: 65px 0; }
+  .about-us .content {
+    margin: 0 90px;
+    padding: 65px; }
+    .about-us .content h3 {
+      text-align: center;
+      font-family: lalezar;
+      color: #4A69BD;
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 35px; }
+    .about-us .content > p {
+      font-family: 'IRANSans';
+      font-size: 25px;
+      line-height: 60px; }
+      .about-us .content > p:nth-child(3) {
+        margin-bottom: 100px; }
+  .about-us .fancy-btn-2 {
+    margin-top: 40px; }
+    .about-us .fancy-btn-2 p {
+      width: 280px;
+      font-size: 22px;
+      margin: 2px; }
+  .about-us .boy-top,
+  .about-us .boy-bottom {
+    width: 140px;
+    position: absolute;
+    z-index: 3; }
+  .about-us .boy-bottom {
+    bottom: 0;
+    right: 25px; }
+  .about-us .boy-top {
+    left: 110px;
+    top: -145px; }
+
+.service-tariffs .content {
+  font-family: 'IRANSans';
+  padding: 40px 35px;
+  padding-bottom: 180px;
+  margin: 0 20px; }
+  .service-tariffs .content .title {
+    font-size: 23px;
+    color: #4A69BD;
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 500; }
+  .service-tariffs .content .text {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 500; }
+  .service-tariffs .content h4 {
+    color: #ffca38;
+    font-weight: 500;
+    font-size: 22px;
     margin-bottom: 20px; }
+  .service-tariffs .content ul li {
+    margin-bottom: 10px; }
+    .service-tariffs .content ul li:last-child {
+      margin-bottom: 0; }
+    .service-tariffs .content ul li p {
+      margin: 0;
+      font-weight: 400;
+      margin-right: 20px;
+      font-size: 15px; }
+      .service-tariffs .content ul li p a {
+        color: #ffca38;
+        text-decoration: none; }
+.service-tariffs .motion-graphic {
+  margin-top: -95px;
+  z-index: 3;
+  position: relative; }
 
 @media (min-width: 768px) {
   .navbar-header {
@@ -790,10 +931,24 @@ footer {
     width: 160px;
     top: 0; }
   .todo-landing .item-2 {
-    display: none; } }
+    display: none; }
+
+  .service-tariffs .content ul li p {
+    font-size: 11px; }
+  .service-tariffs .motion-graphic {
+    margin-top: -70px;
+    z-index: 3;
+    position: relative; } }
 @media (max-width: 992px) {
   .simple-circles .item-3 {
     left: 10px; }
+
+  .about-us .boy-bottom {
+    bottom: 0;
+    right: -40px; }
+  .about-us .content {
+    margin: 0 20px;
+    padding: 40px; }
 
   .banner h4 {
     text-align: center;
@@ -857,7 +1012,16 @@ footer {
     margin-bottom: 100px; }
 
   footer .information {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .about-us .boy-top,
+  .about-us .boy-bottom {
+    width: 110px; }
+  .about-us .boy-top {
+    top: -110px; }
+  .about-us .boy-bottom {
+    bottom: 10px;
+    right: -25px; } }
 @media (max-width: 768px) {
   .banner.banner-page {
     margin-bottom: -100px; }
@@ -946,7 +1110,27 @@ footer {
       margin-top: 40px; }
 
   .faq.simple-circles .circle {
-    display: none; } }
+    display: none; }
+
+  .service-tariffs .content {
+    padding: 15px;
+    padding-bottom: 150px; }
+    .service-tariffs .content ul li p {
+      margin-right: 0; }
+  .service-tariffs .motion-graphic {
+    margin-top: -12%; }
+
+  nav.navbar.bootsnav .navbar-toggle {
+    font-size: 30px;
+    margin-top: 15px; }
+
+  .about-us .content > p {
+    font-size: 16px;
+    line-height: 40px;
+    text-align: justify; }
+  .about-us .content h3 {
+    font-size: 30px;
+    line-height: 50px; } }
 @media (max-width: 650px) {
   .skills-landing .item {
     padding: 0 50px; }
@@ -960,9 +1144,30 @@ footer {
     text-align: left; }
 
   .all-types .genius-type .title {
-    text-align: right; } }
+    text-align: right; }
+
+  .form-main {
+    margin: 0; }
+    .form-main .form {
+      padding: 10px;
+      background-color: #fff; } }
 @media (max-width: 550px) {
   .wave-bottom {
+    display: none; }
+
+  .service-tariffs .content ul li p {
+    line-height: 25px; }
+  .service-tariffs .content .title {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .service-tariffs .content h4 {
+    font-size: 18px; }
+  .service-tariffs .content .text {
+    font-size: 13px;
+    line-height: 30px; }
+
+  .about-us .boy-top,
+  .about-us .boy-bottom {
     display: none; } }
 @media (min-width: 550px) {
   .wave-bottom-xs {
@@ -1015,7 +1220,16 @@ footer {
     margin: auto; }
 
   .banner img {
-    width: 70%; } }
+    width: 70%; }
+
+  .about-us .fancy-btn-2 p {
+    width: 190px;
+    font-size: 14px;
+    margin: 2px; }
+
+  .about-us .content {
+    margin: 0;
+    padding: 20px; } }
 @media (max-width: 400px) {
   .sponsers-slider .item img {
     width: 70%; }
@@ -1031,6 +1245,9 @@ footer {
   .skills-landing .item {
     padding: 0 50px; }
     .skills-landing .item .flex-r {
-      flex-direction: column; } }
+      flex-direction: column; }
+
+  .service-tariffs .content {
+    margin: 0 5px; } }
 
 /*# sourceMappingURL=main.css.map */
