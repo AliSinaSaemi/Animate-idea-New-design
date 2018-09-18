@@ -69,8 +69,10 @@ main {
   &:focus,
   &:hover {
     color: #fff !important;
+    background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
   }
   &:focus {
+    background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
     box-shadow: none !important;
     text-shadow: none !important;
     outline: none !important;
@@ -91,6 +93,7 @@ main {
 
 .circle-bg {
   position: relative;
+  .group-circles,
   .circle {
     position: absolute;
   }
@@ -164,34 +167,12 @@ main {
   background-color: #e24b70;
   position: absolute;
   left: 25%;
-  bottom: -60px;
+  z-index: 3;
+  top: 0;
   &:focus,
   &:hover {
     background-color: #e24b70;
     color: #fff;
-  }
-}
-
-.simple-circles {
-  .item-1 {
-    width: 235px;
-    right: -60px;
-    top: 0;
-  }
-  .item-2 {
-    width: 200px;
-    left: -15px;
-    top: 0;
-  }
-  .item-3 {
-    width: 140px;
-    left: 14%;
-    bottom: 125px;
-  }
-  .item-4 {
-    width: 103px;
-    right: 20%;
-    bottom: 103px;
   }
 }
 
@@ -201,12 +182,12 @@ main {
   position: relative;
   z-index: 2;
   .header-form {
-        background-color: #4A69BD;
+    background-color: #4A69BD;
     h3 {
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: center;
-    padding: 40px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+      padding: 40px;
       font-family: 'samim';
       color: #fff;
     }
@@ -227,6 +208,46 @@ main {
       margin-bottom: 20px;
       padding-top: 10px;
     }
+    .social-title {
+      font-family: 'samim';
+      font-size: 19px;
+      margin-top: 45px;
+    }
+    ul {
+      margin-top: 10px;
+      li {
+        a {
+          font-size: 21px;
+          color: #3474a2;
+        }
+      }
+    }
+    .account-status {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: -15px;
+      .left,
+      .right {
+        width: 50%;
+        a {
+          font-family: 'IRANSans';
+          text-decoration: none;
+          color: #33b7ac;
+        }
+      }
+      .left {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.form-page {
+  .grass {
+    position: relative;
+    z-index: 3;
+    margin-top: -35px;
   }
 }
 
@@ -245,9 +266,71 @@ main {
   }
 }
 
+.banner {
+  &.page-to-page {
+    padding-top: 50px;
+    ul {
+      margin-bottom: 145px;
+    }
+  }
+}
+
 .content {
   background-color: #fff;
   box-shadow: 0px 0px 15px #636363;
   position: relative;
   z-index: 2;
+}
+
+.wave-top.certain-page {
+  position: relative;
+  z-index: 1;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 75px;
+  left: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  z-index: 4;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -9px;
+  left: 0;
+  display: block;
+  right: 0;
+  text-align: center;
+  top: 13px;
+  font-size: 39px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+  color: #fff;
 }

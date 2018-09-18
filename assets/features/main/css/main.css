@@ -18,6 +18,9 @@ body {
 .width-three {
   width: 75%; }
 
+.relative {
+  position: relative; }
+
 .opacity-1 {
   opacity: 1 !important; }
 
@@ -259,8 +262,10 @@ main {
   border-radius: 50px;
   text-align: center; }
   .fancy-btn-2:focus, .fancy-btn-2:hover {
-    color: #fff !important; }
+    color: #fff !important;
+    background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%); }
   .fancy-btn-2:focus {
+    background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
     box-shadow: none !important;
     text-shadow: none !important;
     outline: none !important;
@@ -278,6 +283,7 @@ main {
 
 .circle-bg {
   position: relative; }
+  .circle-bg .group-circles,
   .circle-bg .circle {
     position: absolute; }
 
@@ -331,27 +337,11 @@ main {
   background-color: #e24b70;
   position: absolute;
   left: 25%;
-  bottom: -60px; }
+  z-index: 3;
+  top: 0; }
   .traveller:focus, .traveller:hover {
     background-color: #e24b70;
     color: #fff; }
-
-.simple-circles .item-1 {
-  width: 235px;
-  right: -60px;
-  top: 0; }
-.simple-circles .item-2 {
-  width: 200px;
-  left: -15px;
-  top: 0; }
-.simple-circles .item-3 {
-  width: 140px;
-  left: 14%;
-  bottom: 125px; }
-.simple-circles .item-4 {
-  width: 103px;
-  right: 20%;
-  bottom: 103px; }
 
 .form-main {
   box-shadow: 0px 0px 15px #636363;
@@ -380,6 +370,35 @@ main {
     .form-main .form textarea {
       margin-bottom: 20px;
       padding-top: 10px; }
+    .form-main .form .social-title {
+      font-family: 'samim';
+      font-size: 19px;
+      margin-top: 45px; }
+    .form-main .form ul {
+      margin-top: 10px; }
+      .form-main .form ul li a {
+        font-size: 21px;
+        color: #3474a2; }
+    .form-main .form .account-status {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      margin-top: -15px; }
+      .form-main .form .account-status .left,
+      .form-main .form .account-status .right {
+        width: 50%; }
+        .form-main .form .account-status .left a,
+        .form-main .form .account-status .right a {
+          font-family: 'IRANSans';
+          text-decoration: none;
+          color: #33b7ac; }
+      .form-main .form .account-status .left {
+        text-align: left; }
+
+.form-page .grass {
+  position: relative;
+  z-index: 3;
+  margin-top: -35px; }
 
 .section {
   padding: 50px 0;
@@ -391,11 +410,64 @@ main {
 .banner .page-name {
   text-align: center; }
 
+.banner.page-to-page {
+  padding-top: 50px; }
+  .banner.page-to-page ul {
+    margin-bottom: 145px; }
+
 .content {
   background-color: #fff;
   box-shadow: 0px 0px 15px #636363;
   position: relative;
   z-index: 2; }
+
+.wave-top.certain-page {
+  position: relative;
+  z-index: 1; }
+
+#return-to-top {
+  position: fixed;
+  bottom: 75px;
+  left: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  z-index: 4;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -9px;
+  left: 0;
+  display: block;
+  right: 0;
+  text-align: center;
+  top: 13px;
+  font-size: 39px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i {
+  color: #fff; }
 
 /*---------------------------------------------------
 
@@ -456,6 +528,11 @@ nav.navbar.bootsnav {
   nav.navbar.bootsnav .attr-nav {
     float: left;
     font-size: 12px; }
+    nav.navbar.bootsnav .attr-nav > ul > li.link.active > a {
+      color: #4A69BD; }
+      nav.navbar.bootsnav .attr-nav > ul > li.link.active > a:before {
+        width: 100%;
+        opacity: 1; }
     nav.navbar.bootsnav .attr-nav > ul > li.link > a {
       text-decoration: none;
       font-family: 'IRANSans'; }
@@ -504,6 +581,9 @@ nav.navbar.bootsnav {
     margin-top: 100px;
     margin-right: auto;
     display: block; }
+  .banner img {
+    position: relative;
+    z-index: 2; }
 
 footer {
   padding: 20px; }
@@ -806,11 +886,80 @@ footer {
     #accordion .panel-body p {
       margin-right: 15px; }
 
+.faq .item-1 {
+  width: 235px;
+  right: -60px;
+  top: 0; }
+.faq .item-2 {
+  width: 200px;
+  left: -15px;
+  top: 0; }
+.faq .item-3 {
+  width: 140px;
+  left: 14%;
+  bottom: 125px; }
+.faq .item-4 {
+  width: 103px;
+  right: 20%;
+  bottom: 103px; }
+
+.contact-us .item-1,
+.contact-us .item-2,
+.contact-us .item-3,
+.contact-us .item-4 {
+  width: 200px; }
+.contact-us .item-1 {
+  left: -100px;
+  top: 0; }
+.contact-us .item-2 {
+  right: -80px;
+  top: 0; }
+.contact-us .item-3 {
+  left: -80px;
+  width: 180px;
+  bottom: -45px; }
+.contact-us .item-4 {
+  right: -64px;
+  width: 150px;
+  bottom: 0; }
 .contact-us .fancy-divider {
+  margin-top: 150px; }
+
+.sign-up .item-1,
+.sign-up .item-2,
+.sign-up .item-3,
+.sign-up .item-4 {
+  width: 200px; }
+.sign-up .item-1 {
+  right: -55%;
+  top: 0; }
+.sign-up .item-2 {
+  left: -50%;
+  width: 130px;
+  top: 0; }
+.sign-up .item-4 {
+  right: -25%;
+  width: 100px;
+  bottom: 25%; }
+.sign-up .item-3 {
+  left: -50%;
+  width: 210px;
+  bottom: 10%; }
+.sign-up .fancy-divider {
   margin-top: 150px; }
 
 .about-us {
   padding: 65px 0; }
+  .about-us .item-1,
+  .about-us .item-2 {
+    width: 200px; }
+  .about-us .item-1 {
+    right: -30px;
+    top: -68px;
+    transform: rotate(165deg); }
+  .about-us .item-2 {
+    left: -45px;
+    bottom: 130px; }
   .about-us .content {
     margin: 0 90px;
     padding: 65px; }
@@ -845,42 +994,54 @@ footer {
     left: 110px;
     top: -145px; }
 
-.service-tariffs .content {
-  font-family: 'IRANSans';
-  padding: 40px 35px;
-  padding-bottom: 180px;
-  margin: 0 20px; }
-  .service-tariffs .content .title {
-    font-size: 23px;
-    color: #4A69BD;
-    margin: 0;
-    margin-bottom: 25px;
-    font-weight: 500; }
-  .service-tariffs .content .text {
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: 500; }
-  .service-tariffs .content h4 {
-    color: #ffca38;
-    font-weight: 500;
-    font-size: 22px;
-    margin-bottom: 20px; }
-  .service-tariffs .content ul li {
-    margin-bottom: 10px; }
-    .service-tariffs .content ul li:last-child {
-      margin-bottom: 0; }
-    .service-tariffs .content ul li p {
+.service-tariffs {
+  padding: 60px 0; }
+  .service-tariffs .item-1,
+  .service-tariffs .item-2 {
+    width: 200px; }
+  .service-tariffs .item-1 {
+    right: -105px;
+    top: -68px;
+    transform: rotate(165deg); }
+  .service-tariffs .item-2 {
+    left: -124px;
+    top: -40px; }
+  .service-tariffs .content {
+    font-family: 'IRANSans';
+    padding: 40px 35px;
+    padding-bottom: 180px;
+    margin: 0 20px; }
+    .service-tariffs .content .title {
+      font-size: 23px;
+      color: #4A69BD;
       margin: 0;
-      font-weight: 400;
-      margin-right: 20px;
-      font-size: 15px; }
-      .service-tariffs .content ul li p a {
-        color: #ffca38;
-        text-decoration: none; }
-.service-tariffs .motion-graphic {
-  margin-top: -95px;
-  z-index: 3;
-  position: relative; }
+      margin-bottom: 25px;
+      font-weight: 500; }
+    .service-tariffs .content .text {
+      font-size: 17px;
+      line-height: 35px;
+      font-weight: 500; }
+    .service-tariffs .content h4 {
+      color: #ffca38;
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 20px; }
+    .service-tariffs .content ul li {
+      margin-bottom: 10px; }
+      .service-tariffs .content ul li:last-child {
+        margin-bottom: 0; }
+      .service-tariffs .content ul li p {
+        margin: 0;
+        font-weight: 400;
+        margin-right: 20px;
+        font-size: 15px; }
+        .service-tariffs .content ul li p a {
+          color: #ffca38;
+          text-decoration: none; }
+  .service-tariffs .motion-graphic {
+    margin-top: -95px;
+    z-index: 3;
+    position: relative; }
 
 @media (min-width: 768px) {
   .navbar-header {
@@ -959,9 +1120,6 @@ footer {
     margin-top: 45px;
     font-size: 15px;
     padding: 15px 20px; }
-
-  .traveller {
-    display: none; }
 
   .navbar-brand > img {
     width: 90px;
@@ -1130,12 +1288,22 @@ footer {
     text-align: justify; }
   .about-us .content h3 {
     font-size: 30px;
-    line-height: 50px; } }
+    line-height: 50px; }
+
+  .about-us .item-1,
+  .about-us .item-2 {
+    display: none; }
+
+  .form-page .grass {
+    margin-top: -47px; } }
 @media (max-width: 650px) {
   .skills-landing .item {
     padding: 0 50px; }
     .skills-landing .item img {
       margin-left: 35px; }
+
+  .form-page .grass {
+    display: none; }
 
   .todo-landing .content {
     margin: 0 10px; }
@@ -1150,7 +1318,12 @@ footer {
     margin: 0; }
     .form-main .form {
       padding: 10px;
-      background-color: #fff; } }
+      background-color: #fff; }
+
+  .traveller {
+    font-size: 27px;
+    height: 35px;
+    width: 35px; } }
 @media (max-width: 550px) {
   .wave-bottom {
     display: none; }
@@ -1229,7 +1402,10 @@ footer {
 
   .about-us .content {
     margin: 0;
-    padding: 20px; } }
+    padding: 20px; }
+
+  .form-main .form .social-title {
+    font-size: 16px; } }
 @media (max-width: 400px) {
   .sponsers-slider .item img {
     width: 70%; }
@@ -1248,6 +1424,13 @@ footer {
       flex-direction: column; }
 
   .service-tariffs .content {
-    margin: 0 5px; } }
+    margin: 0 5px; }
+
+  .form-main .form .account-status .left a,
+  .form-main .form .account-status .right a {
+    font-family: 'IRANSans';
+    text-decoration: none;
+    color: #33b7ac;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=main.css.map */

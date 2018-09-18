@@ -23,4 +23,8 @@
     margin-right: auto;
     display: block;
   }
+  img {
+    position: relative;
+    z-index: 2;
+  }
 }

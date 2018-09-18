@@ -1,4 +1,18 @@
 .service-tariffs {
+  padding: 60px 0;
+  .item-1,
+  .item-2 {
+    width: 200px;
+  }
+  .item-1 {
+    right: -105px;
+    top: -68px;
+    transform: rotate(165deg);
+  }
+  .item-2 {
+    left: -124px;
+    top: -40px;
+  }
   .content {
     font-family: 'IRANSans';
     padding: 40px 35px;

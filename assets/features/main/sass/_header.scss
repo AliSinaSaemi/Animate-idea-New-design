@@ -84,6 +84,15 @@ nav.navbar.bootsnav {
     >ul {
       >li {
         &.link {
+          &.active {
+            >a {
+              color: #4A69BD;
+              &:before {
+                width: 100%;
+                opacity: 1;
+              }
+            }
+          }
           >a {
             text-decoration: none;
             font-family: 'IRANSans';

@@ -1,4 +1,4 @@
-.contact-us {
+.sign-up {
   .item-1,
   .item-2,
   .item-3,
@@ -6,22 +6,23 @@
     width: 200px;
   }
   .item-1 {
-left: -100px;
+    right: -55%;
     top: 0;
   }
   .item-2 {
-    right: -80px;
+    left: -50%;
+    width: 130px;
     top: 0;
   }
-  .item-3 {
-    left: -80px;
-    width: 180px;
-    bottom: -45px;
-  }
   .item-4 {
-   right: -64px;
-    width: 150px;
-    bottom: 0;
+    right: -25%;
+    width: 100px;
+    bottom: 25%;
+  }
+  .item-3 {
+    left: -50%;
+    width: 210px;
+    bottom: 10%;
   }
   .fancy-divider {
     margin-top: 150px;

@@ -1,5 +1,18 @@
 .about-us {
   padding: 65px 0;
+  .item-1,
+  .item-2 {
+    width: 200px;
+  }
+  .item-1 {
+    right: -30px;
+    top: -68px;
+    transform: rotate(165deg);
+  }
+  .item-2 {
+        left: -45px;
+    bottom: 130px;
+  }
   .content {
     margin: 0 90px;
     padding: 65px;

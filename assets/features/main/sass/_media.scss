@@ -111,9 +111,7 @@
         padding: 15px 20px;
       }
     }
-    .traveller {
-      display: none;
-    }
+    .traveller {}
     .navbar-brand {
       > img {
         width: 90px;
@@ -334,6 +332,15 @@
         }
       }
     }
+    .about-us {
+      .item-1,
+      .item-2 {
+        display: none;
+      }
+    }
+    .form-page .grass {
+      margin-top: -47px;
+    }
   }
   
   @media (max-width: 650px) {
@@ -344,6 +351,9 @@
           margin-left: 35px;
         }
       }
+    }
+    .form-page .grass {
+      display: none;
     }
     .todo-landing .content {
       margin: 0 10px;
@@ -360,6 +370,11 @@
         padding: 10px;
         background-color: #fff;
       }
+    }
+    .traveller {
+      font-size: 27px;
+      height: 35px;
+      width: 35px;
     }
   }
   
@@ -468,6 +483,9 @@
       margin: 0;
       padding: 20px;
     }
+    .form-main .form .social-title {
+      font-size: 16px;
+    }
   }
   
   @media (max-width: 400px) {
@@ -493,5 +511,12 @@
     }
     .service-tariffs .content {
       margin: 0 5px;
+    }
+    .form-main .form .account-status .left a,
+    .form-main .form .account-status .right a {
+      font-family: 'IRANSans';
+      text-decoration: none;
+      color: #33b7ac;
+      font-size: 13px;
     }
   }
