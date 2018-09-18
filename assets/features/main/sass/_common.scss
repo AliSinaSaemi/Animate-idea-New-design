@@ -99,6 +99,10 @@ main {
   }
 }
 
+.fancy-bg {
+  background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
+}
+
 .fancy-divider {
   background: #1e5799;
   background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
@@ -111,6 +115,10 @@ main {
 .sponsers {
   background-color: #f4f3f2;
   padding: 20px;
+  &.special {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
   img {
     width: 100px;
     &.navabeq {

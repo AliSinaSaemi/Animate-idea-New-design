@@ -287,6 +287,9 @@ main {
   .circle-bg .circle {
     position: absolute; }
 
+.fancy-bg {
+  background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%); }
+
 .fancy-divider {
   background: #1e5799;
   background: -moz-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
@@ -298,6 +301,9 @@ main {
 .sponsers {
   background-color: #f4f3f2;
   padding: 20px; }
+  .sponsers.special {
+    padding-top: 30px;
+    padding-bottom: 0; }
   .sponsers img {
     width: 100px; }
     .sponsers img.navabeq {
@@ -1043,12 +1049,106 @@ footer {
     z-index: 3;
     position: relative; }
 
+.membership {
+  position: relative; }
+  .membership .info {
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; }
+    .membership .info ul {
+      margin-top: 5px; }
+      .membership .info ul li a {
+        color: #2989d8;
+        font-size: 20px; }
+    .membership .info h5,
+    .membership .info h3 {
+      font-family: 'IRANSans';
+      text-align: center; }
+    .membership .info h3 {
+      font-size: 20px; }
+      .membership .info h3 a {
+        text-decoration: none;
+        color: #000; }
+    .membership .info h5 {
+      font-size: 17px;
+      color: #2989d8; }
+    .membership .info .photo img {
+      width: 105px;
+      margin: 0 auto;
+      border-radius: 50%;
+      display: block;
+      margin-top: -25px; }
+  .membership .background {
+    margin: 0 50px; }
+    .membership .background.middle {
+      margin: 0 35px; }
+  .membership.manager .background {
+    margin: 0 15px; }
+  .membership.manager .info {
+    width: 60%; }
+    .membership.manager .info .photo img {
+      width: 125px;
+      margin-top: -35px; }
+    .membership.manager .info h3 {
+      font-size: 25px; }
+    .membership.manager .info h5 {
+      font-size: 19px; }
+    .membership.manager .info ul li a {
+      color: #2989d8;
+      font-size: 25px; }
+  .membership .fancy-divider {
+    margin-top: 20px; }
+
+.testimonial {
+  padding: 120px 0;
+  padding-bottom: 0px; }
+  .testimonial .testimonial-title {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    left: 0;
+    font-size: 25px;
+    font-family: lalezar;
+    color: #4A69BD; }
+  .testimonial .fancy-divider-bottom {
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  .testimonial .row-1 {
+    margin-top: 50px; }
+  .testimonial .row-2 {
+    margin-top: 30px; }
+  .testimonial .owl-carousel .owl-nav {
+    display: none; }
+  .testimonial .owl-carousel .owl-dots {
+    position: absolute;
+    top: -75px;
+    right: 0;
+    left: 0; }
+  .testimonial .owl-carousel .owl-item img.background {
+    display: initial;
+    width: auto; }
+
 @media (min-width: 768px) {
   .navbar-header {
     float: left; }
 
   #owl-two {
-    display: none; } }
+    display: none; }
+
+  .testimonial .fancy-divider-bottom {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .testimonial .fancy-divider-bottom {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .testimonial .fancy-divider-bottom {
+    width: 1170px; } }
 @media (max-width: 1200px) {
   .banner.banner-page .traveller {
     bottom: 220px; }
@@ -1099,10 +1199,30 @@ footer {
   .service-tariffs .motion-graphic {
     margin-top: -70px;
     z-index: 3;
-    position: relative; } }
+    position: relative; }
+
+  .testimonial .membership.manager .info .photo img {
+    width: 95px; }
+  .testimonial .membership.manager .info h3 {
+    font-size: 20px; }
+  .testimonial .membership.manager .info h5 {
+    font-size: 16px; }
+  .testimonial .membership.manager .info ul li a {
+    font-size: 20px; }
+  .testimonial .membership .info .photo img {
+    width: 70px; }
+  .testimonial .membership .info h3 {
+    font-size: 16px; }
+  .testimonial .membership .info h5 {
+    font-size: 13px; }
+  .testimonial .membership .info ul li a {
+    font-size: 15px; } }
 @media (max-width: 992px) {
   .simple-circles .item-3 {
     left: 10px; }
+
+  .banner.page-to-page {
+    padding-top: 150px; }
 
   .about-us .boy-bottom {
     bottom: 0;
@@ -1179,8 +1299,42 @@ footer {
     top: -110px; }
   .about-us .boy-bottom {
     bottom: 10px;
-    right: -25px; } }
+    right: -25px; }
+
+  .membership {
+    box-shadow: 0 0 10px #bbb;
+    padding-top: 120px; }
+    .membership .info {
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      padding-top: 50px; }
+      .membership .info .photo img {
+        width: 100px !important;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -30px;
+        border: 4px solid #fff; }
+      .membership .info h5 {
+        font-size: 15px; }
+      .membership .info h3 {
+        font-size: 17px;
+        margin-top: 5px;
+        font-weight: 400; }
+      .membership .info hr {
+        border-top: 1px solid #c3c3c3; }
+      .membership .info ul {
+        margin-top: -10px;
+        padding-bottom: 0;
+        margin-bottom: 0; }
+        .membership .info ul li a {
+          font-size: 20px !important; } }
 @media (max-width: 768px) {
+  .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand > img {
+    margin-bottom: 5px; }
+
   .banner.banner-page {
     margin-bottom: -100px; }
 
@@ -1280,7 +1434,10 @@ footer {
 
   nav.navbar.bootsnav .navbar-toggle {
     font-size: 30px;
-    margin-top: 15px; }
+    margin-top: 25px; }
+    nav.navbar.bootsnav .navbar-toggle i {
+      position: relative;
+      bottom: 7px; }
 
   .about-us .content > p {
     font-size: 16px;
@@ -1295,7 +1452,16 @@ footer {
     display: none; }
 
   .form-page .grass {
-    margin-top: -47px; } }
+    margin-top: -47px; }
+
+  .sponsers-slider.special {
+    padding-top: 75px; }
+
+  .testimonial .testimonial-title {
+    top: 25px; }
+  .testimonial .membership {
+    margin: 0 120px;
+    margin-top: 30px; } }
 @media (max-width: 650px) {
   .skills-landing .item {
     padding: 0 50px; }
@@ -1341,7 +1507,11 @@ footer {
 
   .about-us .boy-top,
   .about-us .boy-bottom {
-    display: none; } }
+    display: none; }
+
+  .testimonial .membership {
+    margin: 0 45px;
+    margin-top: 30px; } }
 @media (min-width: 550px) {
   .wave-bottom-xs {
     display: none; } }
@@ -1431,6 +1601,10 @@ footer {
     font-family: 'IRANSans';
     text-decoration: none;
     color: #33b7ac;
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .testimonial .membership {
+    margin: 0;
+    margin-top: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

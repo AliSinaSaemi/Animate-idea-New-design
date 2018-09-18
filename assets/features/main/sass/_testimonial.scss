@@ -1,0 +1,125 @@
+.membership {
+  position: relative;
+  .info {
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    ul {
+      margin-top: 5px;
+      li {
+        a {
+          color: #2989d8;
+          font-size: 20px;
+        }
+      }
+    }
+    h5,
+    h3 {
+      font-family: 'IRANSans';
+      text-align: center;
+    }
+    h3 {
+      font-size: 20px;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    h5 {
+      font-size: 17px;
+      color: #2989d8;
+    }
+    .photo {
+      img {
+        width: 105px;
+        margin: 0 auto;
+        border-radius: 50%;
+        display: block;
+        margin-top: -25px;
+      }
+    }
+  }
+  .background {
+    margin: 0 50px;
+    &.middle {
+      margin: 0 35px;
+    }
+  }
+  // For CEO
+  &.manager {
+    .background {
+      margin: 0 15px;
+    }
+    .info {
+      width: 60%;
+      .photo {
+        img {
+          width: 125px;
+          margin-top: -35px;
+        }
+      }
+      h3 {
+        font-size: 25px;
+      }
+      h5 {
+        font-size: 19px;
+      }
+      ul {
+        li a {
+          color: #2989d8;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .fancy-divider {
+    margin-top: 20px;
+  }
+}
+
+.testimonial {
+  padding: 120px 0;
+  padding-bottom: 0px;
+  .testimonial-title {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    left: 0;
+    font-size: 25px;
+    font-family: lalezar;
+    color: #4A69BD;
+  }
+  .fancy-divider-bottom {
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row-1 {
+    margin-top: 50px;
+  }
+  .row-2 {
+    margin-top: 30px;
+  }
+  .owl-carousel {
+    .owl-nav {
+      display: none;
+    }
+    .owl-dots {
+      position: absolute;
+      top: -75px;
+      right: 0;
+      left: 0;
+    }
+    .owl-item {
+      img.background {
+        display: initial;
+        width: auto;
+      }
+    }
+  }
+}
