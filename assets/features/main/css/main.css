@@ -1450,6 +1450,64 @@ footer {
       font-size: 10px;
       line-height: 20px; }
 
+.selected-article .article {
+  margin: 0 45px; }
+  .selected-article .article .content {
+    padding: 55px; }
+.selected-article h5 {
+  margin-top: 0;
+  font-size: 35px; }
+.selected-article p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 37px;
+  color: #8e8e8e; }
+.selected-article > p:last-child {
+  margin-bottom: 25px; }
+.selected-article > p:first-child {
+  margin-top: 25px; }
+.selected-article .display-flex {
+  margin-top: 15px;
+  margin-bottom: 20px; }
+  .selected-article .display-flex h3 {
+    font-family: 'IRANSans';
+    margin-bottom: 0;
+    margin-left: 35px;
+    font-weight: 500;
+    color: #7b7b7b; }
+  .selected-article .display-flex .seen .count {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 18px !important;
+    line-height: 5px !important; }
+.selected-article .seen .count:before {
+  top: 0;
+  right: -6px;
+  font-size: 27px; }
+.selected-article .tags {
+  margin-top: 30px; }
+  .selected-article .tags .btn {
+    font-size: 13px;
+    width: 120px;
+    margin-left: 15px; }
+.selected-article .item-1 {
+  width: 250px;
+  left: -60px;
+  top: -23px; }
+.selected-article .item-2 {
+  width: 200px;
+  left: -5%;
+  bottom: 20%; }
+.selected-article .item-3 {
+  width: 300px;
+  right: -135px;
+  bottom: 125px; }
+.selected-article .item-4 {
+  width: 103px;
+  right: 5%;
+  top: 103px; }
+
 @media (min-width: 768px) {
   .navbar-header {
     float: left; }
@@ -1647,7 +1705,12 @@ footer {
         padding-bottom: 0;
         margin-bottom: 0; }
         .membership .info ul li a {
-          font-size: 20px !important; } }
+          font-size: 20px !important; }
+
+  .selected-article .article {
+    margin: 0; }
+    .selected-article .article .content {
+      padding: 35px; } }
 @media (max-width: 768px) {
   .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand > img {
     margin-bottom: 5px; }
@@ -1781,7 +1844,33 @@ footer {
     margin-top: 30px; }
 
   .articles .nav-tabs {
-    width: 180px; } }
+    width: 180px; }
+
+  .selected-article p {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify; }
+  .selected-article .display-flex {
+    margin-top: 0; }
+    .selected-article .display-flex h3 {
+      font-size: 15px; }
+    .selected-article .display-flex .seen .count {
+      margin-top: 25px;
+      font-size: 13px !important; }
+  .selected-article .article {
+    margin: 0; }
+    .selected-article .article .content {
+      padding: 25px;
+      width: 90%; }
+      .selected-article .article .content h5 {
+        font-size: 20px; }
+  .selected-article .tags .btn {
+    font-size: 8px;
+    width: 80px;
+    margin-left: 5px; }
+  .selected-article .seen .count:before {
+    right: 0;
+    font-size: 22px; } }
 @media (max-width: 650px) {
   .skills-landing .item {
     padding: 0 50px; }
@@ -1924,6 +2013,10 @@ footer {
 
   .form-main .form .social-title {
     font-size: 16px; } }
+@media (max-width: 450px) {
+  .selected-article .article .content h5 {
+    font-size: 17px;
+    line-height: 30px; } }
 @media (max-width: 400px) {
   .sponsers-slider .item img {
     width: 70%; }
@@ -1953,6 +2046,9 @@ footer {
 
   .testimonial .membership {
     margin: 0;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .selected-article .article .content {
+    padding: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
