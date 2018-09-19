@@ -1,0 +1,149 @@
+.articles {
+  .searchop {
+    margin-top: 40px;
+  }
+  .pagination {
+    margin-top: 50px;
+  }
+  .article {
+    .content {
+      p {
+        text-align: justify;
+        font-size: 11px;
+        line-height: 25px;
+        margin-top: 15px;
+        color: #a9a9a9;
+      }
+      h5 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 13px;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+      .fancy-btn {
+        font-size: 10px;
+        padding: 3px;
+        width: 60px;
+        margin-top: 15px;
+      }
+      .right,
+      .left {
+        width: 50%;
+      }
+    }
+  }
+  .nav-tabs {
+    border-bottom: none;
+    margin-top: 15px;
+    width: 604px;
+    margin: auto;
+    margin-bottom: 40px;
+    >li {
+      margin-left: 20px;
+      &:last-child {
+        margin-left: 0;
+      }
+      &.active {
+        > a {
+          border: none;
+          background-color: #efe7e7;
+          p {
+            color: #4A69BD;
+          }
+        }
+      }
+      >a {
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        text-decoration: none;
+        padding: 20px 0;
+        width: 190px;
+        box-shadow: 0px 0px 15px #bbb;
+        transition: .4s;
+        &:focus,
+        &:hover {
+          border: none;
+          text-decoration: none;
+        }
+        &:hover {
+          background-color: #efe7e7;
+        }
+        img {
+          width: 75px;
+          margin: 0 auto;
+          display: block;
+        }
+        p {
+          font-family: 'samim';
+          margin-top: 5px;
+          font-size: 15px;
+          color: #4A69BD;
+        }
+      }
+    }
+  }
+  .side-menu {
+    .title {
+      font-size: 18px;
+      font-family: "samim";
+      color: #4A69BD;
+      margin-top: 40px;
+    }
+    .fancy-divider {
+      margin-top: 15px;
+    }
+    .social-media {
+      li {
+        margin-left: 15px;
+        &:last-child {
+          margin-left: 0;
+        }
+        a {
+          i {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #b5b4b4;
+            &:before {
+              position: relative;
+              top: 10px;
+              color: #1cb89d;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .post-related {
+      text-decoration: none;
+      margin-top: 15px;
+      img {
+        width:70px;
+        height: 70px;
+        border-radius: 5px;
+      }
+      .detail {
+        margin-right: 10px;
+        p,
+        h4 {
+          font-family: "IRANSans";
+        }
+        h4 {
+          margin-top: 0;
+          font-size: 12px;
+          color: #000;
+        }
+        p {
+          font-size: 10px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

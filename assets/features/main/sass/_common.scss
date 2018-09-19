@@ -231,10 +231,10 @@ main {
       }
     }
     .account-status {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    margin-top: -15px;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      margin-top: -15px;
       .left,
       .right {
         width: 50%;
@@ -295,6 +295,245 @@ main {
   z-index: 1;
 }
 
+.pagination {
+  > li {
+    &.count-page {
+      a {
+        width: 35px;
+        height: 35px;
+        background-color: #f4f3f2;
+        color: #4A69BD;
+        border: 1px solid #4A69BD;
+        transition: .4s;
+        &:hover {
+          background-color: #4A69BD;
+          color: #fff;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+    &.active {
+      a {
+        background-color: #4A69BD;
+        color: #fff;
+      }
+    }
+    &:last-child {
+      > a {
+        margin-left: 0 !important;
+      }
+    }
+    > a {
+      margin-left: 10px !important;
+      border-radius: 50%;
+      font-family: 'IRANSans_num_web';
+      &.prev,
+      &.next {
+        background-color: #4A69BD;
+        color: #fff;
+        border: 1px solid #4A69BD;
+        p {
+          margin-bottom: 0;
+          font-family: 'IRANSans';
+          position: relative;
+          &:before {
+            font-family: FontAwesome;
+            
+            position: absolute;
+            bottom: -4px;
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+      }
+      &.prev {
+        p {
+          &:before {
+            content: "\f104";
+            left: -25px;
+          }
+        }
+      }
+      &.next {
+        p {
+          &:before {
+            content: "\f105";
+            right: -25px;
+          }
+        }
+      }
+      &.next {
+        padding-right: 40px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-left: 25px !important;
+      }
+      &.prev {
+        padding-left: 40px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.searchop {
+  position: relative;
+  input {
+    padding: 22px 15px;
+    font-family: "IRANSans";
+    &::placeholder {
+      color: #27a4a5;
+      opacity: 1;
+      /* Firefox */
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #27a4a5;
+    }
+  }
+  button {
+    position: absolute;
+    padding: 2px;
+    border: none;
+    background-color: transparent;
+    left: 3px;
+    bottom: 2px;
+    width: 35px;
+    &:focus,
+    &:hover {
+      box-shadow: none !important;
+      background: transparent !important;
+      border: none;
+    }
+  }
+}
+
+.seen {
+  .count {
+    padding-right: 30px;
+    color: #7b7b7b !important;
+    font-size: 13px !important;
+    font-family: 'IRANSans_num_web' !important;
+    margin-bottom: 0;
+    position: relative;
+    &:before {
+      font-family: FontAwesome;
+      content: "\f06e";
+      position: absolute;
+      font-size: 23px;
+      right: 0;
+      color: #4A69BD;
+    }
+  }
+}
+
+.article {
+  .content,
+  img {
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  img {
+    width: 95%;
+    margin-top: 40px;
+  }
+  .content {
+    padding: 15px;
+    z-index: 3;
+    position: relative;
+    margin-top: -75px;
+    width: 85%;
+    transition: .4s;
+    h5,
+    p {
+      font-family: 'IRANSans';
+    }
+    h5 {
+      line-height: 23px;
+    }
+    .fancy-divider {
+      margin: auto;
+      width: 80%;
+    }
+  }
+}
+
+.tags {
+  a {
+    width: 100px;
+    font-size: 10px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-family: "IRANSans";
+    transition: .4s;
+    &.btn-primary {
+      color: #1e6099;
+      border-color: #1e6099;
+      &:hover {
+        background-color: #1e6099;
+        color: #fff;
+      }
+    }
+    &.btn-warning {
+      color: #ee5136;
+      border-color: #ee5136;
+      &:hover {
+        background-color: #ee5136;
+        color: #fff;
+      }
+    }
+    &.btn-info {
+      color: #46daaa;
+      border-color: #46daaa;
+      &:hover {
+        background-color: #46daaa;
+        color: #fff;
+      }
+    }
+    &.btn-success {
+      color: #4cae4c;
+      border-color: #4cae4c;
+      &:hover {
+        background-color: #4cae4c;
+        color: #fff;
+      }
+    }
+    &.btn-light {
+      color: #c371f7;
+      border-color: #c371f7;
+      &:hover {
+        background-color: #c371f7;
+        color: #fff;
+      }
+    }
+    &.btn-light {
+      color: #c371f7;
+      border-color: #c371f7;
+      &:hover {
+        background-color: #c371f7;
+        color: #fff;
+      }
+    }
+    &.btn-danger {
+      color: #e83b35;
+      border-color: #e83b35;
+      &:hover {
+        background-color: #e83b35;
+        color: #fff;
+      }
+    }
+  }
+}
+
 #return-to-top {
   position: fixed;
   bottom: 75px;
@@ -315,30 +554,70 @@ main {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  i {
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -9px;
+    left: 0;
+    display: block;
+    right: 0;
+    text-align: center;
+    top: 13px;
+    font-size: 39px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.9);
+    i {
+      color: #fff;
+    }
+  }
 }
 
-#return-to-top i {
-  color: #fff;
-  margin: 0 auto;
-  position: relative;
-  margin-top: -9px;
-  left: 0;
-  display: block;
-  right: 0;
-  text-align: center;
-  top: 13px;
-  font-size: 39px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#return-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-#return-to-top:hover i {
-  color: #fff;
+.nav-tabs-common {
+  >li {
+    margin-left: 20px;
+    &:last-child {
+      margin-left: 0;
+    }
+    &.distance {
+      p {
+        font-size: 20px;
+        color: #4373b8;
+      }
+    }
+    &.active {
+      > a {
+        p {
+          color: #1bb89d !important;
+        }
+      }
+    }
+    >a {
+      padding: 0 !important;
+      width: auto !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      cursor: pointer;
+      &:focus,
+      &:hover {
+        border: none;
+        text-decoration: none;
+      }
+      &:hover {
+        color: #1bb89d;
+      }
+      p {
+        font-family: 'samim';
+        margin-top: 5px;
+        font-size: 15px;
+        color: #4A69BD;
+      }
+    }
+  }
 }

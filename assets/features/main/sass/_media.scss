@@ -468,6 +468,9 @@
         margin-top: 30px;
       }
     }
+    .articles .nav-tabs {
+      width: 180px;
+    }
   }
   
   @media (max-width: 650px) {
@@ -502,6 +505,53 @@
       font-size: 27px;
       height: 35px;
       width: 35px;
+    }
+    .pagination {
+      font-size: 11px;
+      > li.count-page {
+        > a {
+          width: 25px;
+          height: 25px;
+          padding: 0;
+          p {
+            margin-bottom: 0;
+            margin-top: 5px;
+          }
+        }
+      }
+      > li {
+        a {
+          &.next,
+          &.prev {
+            padding: 4px;
+            width: 45px;
+            p {
+              &:before {
+                bottom: -2px;
+                font-size: 14px;
+              }
+            }
+          }
+          &.next {
+            margin-left: 10px !important;
+            p {
+              text-align: left;
+              &:before {
+                right: 0px;
+              }
+            }
+          }
+          &.prev {
+            margin-right: 0 !important;
+            p {
+              text-align: right;
+              &:before {
+                left: 1px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   
