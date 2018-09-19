@@ -1134,6 +1134,23 @@ footer {
     display: initial;
     width: auto; }
 
+.testimonial .item-1 {
+  width: 250px;
+  left: -60px;
+  top: -23px; }
+.testimonial .item-2 {
+  width: 100px;
+  left: 5%;
+  bottom: 55px; }
+.testimonial .item-3 {
+  width: 300px;
+  right: -135px;
+  bottom: 125px; }
+.testimonial .item-4 {
+  width: 103px;
+  right: 5%;
+  top: 103px; }
+
 @media (min-width: 768px) {
   .navbar-header {
     float: left; }
@@ -1303,7 +1320,8 @@ footer {
 
   .membership {
     box-shadow: 0 0 10px #bbb;
-    padding-top: 120px; }
+    padding-top: 120px;
+    margin-top: 30px; }
     .membership .info {
       position: relative;
       width: 100%;
