@@ -201,6 +201,113 @@ main {
     }
   }
   .form {
+    .form-group {
+      &:before,
+      &:after,
+      .alert-icon {
+        display: none;
+      }
+    }
+    .alert-sign {
+      position: relative;
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 4;
+        top: -6px;
+        display: block !important;
+      }
+      &:after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 7px 10px;
+        border-color: transparent transparent #000 transparent;
+        left: 30px;
+        z-index: 4;
+      }
+      &:before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 9px 6px 9px;
+        border-color: transparent transparent #fff transparent;
+        left: 31px;
+        z-index: 5;
+        top: -5px;
+      }
+      &.green {
+        input {
+          border-color: #97c961;
+        }
+        &:after {
+          border-color: transparent transparent #97c961 transparent;
+        }
+        .alert-icon.green {
+          display: block;
+        }
+      }
+      &.red {
+        input {
+          border-color: #ca353a;
+          &::placeholder {
+            color: #ca353a;
+            opacity: 1;
+          }
+        }
+        &:after {
+          border-color: transparent transparent #ca353a transparent;
+        }
+        .alert-icon.red {
+          display: block;
+        }
+      }
+      &.orange {
+        input {
+          border-color: #f17629;
+          &::placeholder {
+            color: #f17629;
+            opacity: 1;
+          }
+        }
+        &:after {
+          border-color: transparent transparent #f17629 transparent;
+        }
+        .alert-icon.orange {
+          display: block;
+        }
+      }
+      &.blue {
+        input {
+          border-color: #1e84c6;
+          &::placeholder {
+            color: #1e84c6;
+            opacity: 1;
+          }
+        }
+        &:after {
+          border-color: transparent transparent #1e84c6 transparent;
+        }
+        .alert-icon.blue {
+          display: block;
+        }
+      }
+      input {
+        position: relative;
+      }
+      .alert-icon {
+        position: absolute;
+        width: 40px;
+        left: 20px;
+        top: -41px;
+      }
+    }
+    .form-group:first-child {
+      input {
+        margin-top: 10px;
+      }
+    }
     padding: 40px;
     background-color: #fff;
     input,
@@ -210,7 +317,13 @@ main {
       border-radius: 0;
     }
     input {
-      margin-bottom: 30px;
+      margin-bottom: 45px;
+      box-shadow: none !important;
+      &:focus {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: none !important;
+      }
     }
     textarea {
       margin-bottom: 20px;
