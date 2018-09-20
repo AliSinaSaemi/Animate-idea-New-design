@@ -296,7 +296,7 @@ main {
   background: -webkit-linear-gradient(left, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
   background: linear-gradient(to right, #1e5799 0%, #1bbb9c 100%, #207cca 100%, #2989d8 100%);
   width: 100%;
-  height: 1.5px; }
+  height: 2px; }
 
 .sponsers {
   background-color: #f4f3f2;
@@ -642,31 +642,36 @@ main {
     #return-to-top:hover i {
       color: #fff; }
 
-.nav-tabs-common > li {
-  margin-left: 20px; }
-  .nav-tabs-common > li:last-child {
-    margin-left: 0; }
-  .nav-tabs-common > li.distance p {
-    font-size: 20px;
-    color: #4373b8; }
-  .nav-tabs-common > li.active > a p {
-    color: #1bb89d !important; }
-  .nav-tabs-common > li > a {
-    padding: 0 !important;
-    width: auto !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    cursor: pointer; }
-    .nav-tabs-common > li > a:focus, .nav-tabs-common > li > a:hover {
-      border: none;
-      text-decoration: none; }
-    .nav-tabs-common > li > a:hover {
-      color: #1bb89d; }
-    .nav-tabs-common > li > a p {
-      font-family: 'samim';
-      margin-top: 5px;
-      font-size: 15px;
-      color: #4A69BD; }
+.nav-tabs-common {
+  border-bottom: 0; }
+  .nav-tabs-common > li {
+    margin-left: 20px; }
+    .nav-tabs-common > li:last-child {
+      margin-left: 0; }
+    .nav-tabs-common > li.distance p {
+      font-size: 20px;
+      color: #4373b8; }
+    .nav-tabs-common > li.active > a {
+      border-color: transparent !important; }
+      .nav-tabs-common > li.active > a p {
+        color: #1bb89d !important; }
+    .nav-tabs-common > li > a {
+      padding: 0 !important;
+      width: auto !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      cursor: pointer; }
+      .nav-tabs-common > li > a:focus, .nav-tabs-common > li > a:hover {
+        border-color: transparent !important;
+        text-decoration: none; }
+      .nav-tabs-common > li > a:hover p {
+        color: #1bb89d; }
+      .nav-tabs-common > li > a p {
+        font-family: 'samim';
+        margin-top: 5px;
+        font-size: 15px;
+        color: #4A69BD;
+        transition: .4s; }
 
 /*---------------------------------------------------
 
@@ -1507,6 +1512,40 @@ footer {
   width: 103px;
   right: 5%;
   top: 103px; }
+
+.samples .pagination {
+  margin-top: 60px;
+  margin-bottom: -30px; }
+.samples .nav-tabs-common {
+  width: 506px;
+  margin: auto;
+  margin-bottom: 60px; }
+  .samples .nav-tabs-common > li.distance p {
+    font-size: 25px; }
+  .samples .nav-tabs-common > li a p {
+    font-size: 25px; }
+.samples .thumbnail {
+  padding: 0; }
+  .samples .thumbnail .caption h3,
+  .samples .thumbnail .caption p {
+    font-family: "IRANSans"; }
+  .samples .thumbnail .caption h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400; }
+  .samples .thumbnail .caption p {
+    margin-top: 15px;
+    color: #8c8c8c; }
+  .samples .thumbnail .caption .fancy-divider {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+.samples .seen {
+  width: 52px;
+  margin: auto; }
+  .samples .seen .count {
+    font-size: 15px; }
+    .samples .seen .count:before {
+      top: -6px; }
 
 @media (min-width: 768px) {
   .navbar-header {

@@ -1,0 +1,55 @@
+.samples {
+  .pagination {
+    margin-top: 60px;
+    margin-bottom: -30px;
+  }
+  .nav-tabs-common {
+    width: 506px;
+    margin: auto;
+    margin-bottom: 60px;
+    > li {
+      &.distance {
+        p {
+          font-size: 25px;
+        }
+      }
+      a {
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .thumbnail {
+    padding: 0;
+    .caption {
+      h3,
+      p {
+        font-family: "IRANSans";
+      }
+      h3 {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      p {
+        margin-top: 15px;
+        color: #8c8c8c;
+      }
+      .fancy-divider {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .seen {
+    width: 52px;
+    margin: auto;
+    .count {
+      font-size: 15px;
+      &:before {
+        top: -6px;
+      }
+    }
+  }
+}
