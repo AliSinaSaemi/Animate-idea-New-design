@@ -1,6 +1,8 @@
 .selected-article {
   .article {
     margin: 0 45px;
+    z-index: 3;
+    position: relative;
     .content {
       padding: 55px;
     }
@@ -34,10 +36,10 @@
     }
     .seen {
       .count {
-    margin-top: 30px;
-    margin-right: 10px;
-    font-size: 18px !important;
-    line-height: 5px !important;
+        margin-top: 30px;
+        margin-right: 10px;
+        font-size: 18px !important;
+        line-height: 5px !important;
       }
     }
   }

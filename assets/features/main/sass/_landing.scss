@@ -1,8 +1,9 @@
 .all-types {
-    padding: 85px 0;
-    padding-top: 100px;
-    background-color: #f4f3f2;
-    margin-bottom: -25px;
+  padding: 85px 0;
+  padding-top: 100px;
+  background-color: #f4f3f2;
+  margin-bottom: -25px;
+  z-index: 2;
   .item-1 {
     width: 235px;
     bottom: -165px;
@@ -94,13 +95,13 @@
   padding: 300px 0;
   margin-bottom: -205px;
   margin-top: -245px;
-  .content {
+  .details {
     width: 55%;
   }
   img {
     width: 45%;
   }
-  .content {
+  .details {
     .title {
       font-family: lalezar;
       color: #333333;
@@ -139,7 +140,7 @@
     top: -15px;
   }
   .item-5 {
-     width: 200px;
+    width: 200px;
     right: -50px;
     bottom: 5px;
   }
@@ -148,7 +149,7 @@
     left: 20%;
     bottom: 50px;
   }
-  .content {
+  .details {
     width: 70%;
     .title {
       font-family: 'samim';
