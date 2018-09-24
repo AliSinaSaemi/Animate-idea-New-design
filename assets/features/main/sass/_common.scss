@@ -205,10 +205,38 @@ a {
   left: 25%;
   z-index: 3;
   top: 0;
+  transition: .4s;
   &:focus,
   &:hover {
-    background-color: #e24b70;
+    background-color: #962c46;
     color: #fff;
+  }
+}
+
+body.loader-in {
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 4000;
+  transition: .4s;
+  &.right {
+    right: 100% !important;
+  }
+  img {
+    width: 500px;
+    margin:auto;
+    display: block;
+    margin-top: 20px;
   }
 }
 

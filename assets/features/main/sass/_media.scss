@@ -118,14 +118,17 @@
         margin-top: 275px;
         height: 340px;
       }
+
       .membership {
         .fancy-divider {
           width: 105px;
         }
+
         &:hover {
           .fancy-divider {
             width: 115px;
           }
+
           .info {
             .photo {
               img {
@@ -190,6 +193,11 @@
       .item-3 {
         left: 10px;
       }
+    }
+
+    .loader img {
+      width: 200px;
+      margin-top: 50px;
     }
 
     .banner.page-to-page {
@@ -390,6 +398,22 @@
     .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand>img {
       margin-bottom: 5px;
     }
+
+    #return-to-top {
+      width: 35px;
+      height: 35px;
+      bottom: 65px;
+      left: 8px;
+
+      i {
+        font-size: 25px;
+      }
+    }
+
+    .banner.page-to-page ul {
+      margin-bottom: 65px;
+    }
+
 
     .banner.banner-page {
       margin-bottom: -100px;

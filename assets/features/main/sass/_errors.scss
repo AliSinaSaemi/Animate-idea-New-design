@@ -1,5 +1,5 @@
 body.error-bg-500 {
-  background-color: #fefcfe;
+  background-color: #fff;
 }
 
 body.error-bg-404 {
@@ -23,6 +23,11 @@ body.error-bg-403 {
   width: 600px;
   margin: auto;
   margin-top: 60px;
+  img {
+    width: 500px;
+    margin: auto;
+    display: block;
+  }
 }
 
 .error-500 {
@@ -58,7 +63,7 @@ body.error-bg-403 {
     right: 0;
     left: 0;
     margin: auto;
-    bottom: -20px;
+    bottom: -30px;
     h3 {
       margin-top: 0;
       font-weight: 500;
@@ -89,7 +94,7 @@ body.error-bg-403 {
     position: absolute;
     width: 200px;
     right: 30px;
-    top: 140px;
+    top: 110px;
     bottom: 0;
     color: #407ddc;
     h3 {

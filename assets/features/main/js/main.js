@@ -64,6 +64,13 @@ $('#owl-three').owlCarousel({
   }
 });
 
+$(document).ready(function() {
+	setTimeout(function(){
+		$('body').removeClass('loader-in');
+		$('.loader').addClass('right');
+	}, 5000);
+});
+
 $(document).ready(function () {
   $('a.traveller').on('click', function (e) {
     // ambil isi href
