@@ -112,7 +112,23 @@ footer {
   ul {
     margin-bottom: 0;
     li {
+      &:hover:nth-child(1) {
+        a {
+          color: #b600ff;
+        }
+      }
+      &:hover:nth-child(2) {
+        a {
+          color: #2d84c3;
+        }
+      }
+      &:hover:nth-child(3) {
+        a {
+          color: #ec3636;
+        }
+      }
       a {
+        transition: .4s;
         color: #fff;
         font-size: 20px;
       }

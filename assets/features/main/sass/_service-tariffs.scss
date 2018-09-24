@@ -50,6 +50,11 @@
           a {
             color: #ffca38;
             text-decoration: none;
+            cursor: pointer;
+            transition: .4s;
+            &:hover {
+              color: #b18a1f;
+            }
           }
         }
       }

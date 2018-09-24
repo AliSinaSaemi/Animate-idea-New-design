@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/features/font/iran-sans/css/fontiran.css" />
   <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
   <link rel="stylesheet" href="assets/features/samim-font/style.css" />
+  <link rel="stylesheet" href="assets/features/hover/css/hover.css" />
   <link rel="stylesheet" href="assets/features/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/features/bootstrap/rtl/css/bootstrap-rtl.min.css" />
   <link rel="stylesheet" href="assets/features/bootsnav/css/bootsnav.css" />
@@ -122,21 +123,24 @@
 
             <li class="active">
               <a data-toggle="tab" href="#menu1">
-                <img src="assets/img/icons/13.svg" alt="" />
+                <img class="unhover" src="assets/img/icons/13.svg" alt="" />
+                <img class="hover" src="assets/img/icons/23.svg" alt="" />
                 <p class="text-center">خبر</p>
               </a>
             </li>
 
             <li>
               <a data-toggle="tab" href="#menu2">
-                <img src="assets/img/icons/14.svg" alt="" />
+                <img class="unhover" src="assets/img/icons/14.svg" alt="" />
+                <img class="hover" src="assets/img/icons/22.svg" alt="" />
                 <p class="text-center">مقاله</p>
               </a>
             </li>
 
             <li>
               <a data-toggle="tab" href="#menu3">
-                <img src="assets/img/icons/15.svg" alt="" />
+                <img class="unhover" src="assets/img/icons/15.svg" alt="" />
+                <img class="hover" src="assets/img/icons/21.svg" alt="" />
                 <p class="text-center">آموزش</p>
               </a>
             </li>
@@ -534,13 +538,13 @@
             <div class="fancy-divider"></div>
             <ul class="list-unstyled list-inline social-media">
               <li>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="hvr-grow" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a class="hvr-grow" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a class="hvr-grow" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
               </li>
             </ul>
 
@@ -558,8 +562,33 @@
             <h3 class="title">پست های مرتبط</h3>
             <div class="fancy-divider"></div>
 
-            <a href="#" class="display-flex flex-r post-related">
-              <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+            <a href="#" class="display-flex flex-r post-related green">
+              <div class="picture">
+                <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+                <span>آموزش</span>
+              </div>
+              <div class="detail">
+                <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                </p>
+              </div>
+            </a>
+            <a href="#" class="display-flex flex-r post-related light-green">
+              <div class="picture">
+                <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+                <span>خبر</span>
+              </div>
+              <div class="detail">
+                <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                </p>
+              </div>
+            </a>
+            <a href="#" class="display-flex flex-r post-related purple">
+              <div class="picture">
+                <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+                <span>افتر افکت</span>
+              </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
@@ -567,8 +596,11 @@
               </div>
             </a>
             <!-- ./post-related -->
-            <a href="#" class="display-flex flex-r post-related">
-              <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+            <a href="#" class="display-flex flex-r post-related orange">
+              <div class="picture">
+                <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+                <span>ایلاستریتر</span>
+              </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
@@ -576,8 +608,11 @@
               </div>
             </a>
             <!-- ./post-related -->
-            <a href="#" class="display-flex flex-r post-related">
-              <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+            <a href="#" class="display-flex flex-r post-related red">
+              <div class="picture">
+                <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+                <span>مقاله</span>
+              </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
@@ -585,8 +620,11 @@
               </div>
             </a>
             <!-- ./post-related -->
-            <a href="#" class="display-flex flex-r post-related">
-              <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+            <a href="#" class="display-flex flex-r post-related blue">
+              <div class="picture">
+                <img class="img-responsive" src="assets/img/thumbs/post-related.jpg" alt="">
+                <span>تئوری</span>
+              </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون

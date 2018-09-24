@@ -32,6 +32,12 @@
     padding: 50px;
     box-shadow: 0 0 21px #9c9c9c;
     margin: 10px;
+    &:focus,
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
     .title {
       font-family: 'samim';
       font-size: 19px;
@@ -47,6 +53,7 @@
       }
       .important {
         color: #fd8686;
+        text-decoration: none;
       }
       text-align: center;
       font-family: 'IRANSans';
@@ -56,6 +63,7 @@
       font-weight: 500;
     }
     img {
+      transition: .4s;
       width: 170px;
       position: absolute;
       top: -85px;
@@ -83,6 +91,17 @@
     img {
       left: -55px;
     }
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -171,5 +190,6 @@
   }
   .fancy-divider {
     margin-top: 100px;
+    margin-bottom: 30px;
   }
 }
