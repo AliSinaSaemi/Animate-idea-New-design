@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Animate idea | Articles</title>
+  <title>Animate idea | Home</title>
 
   <link rel="icon" type="image/svg" href="assets/img/logo/animate%20idea-2.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -88,9 +88,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-5 col-md-6">
-          <img src="assets/img/thumbs/article.svg" alt="">
+          <img class="banner-img" src="assets/img/thumbs/article.svg" alt="">
         </div>
-        <div class="col-sm-7 col-md-6">
+        <div class="banner-detail col-sm-7 col-md-6">
           <h4 class="lalezar-font page-name heading-style-2 text-center">تعرفه خدمات</h4>
           <ul class="list-inline list-unstyled text-center breadcrumbs">
             <li>
@@ -108,11 +108,6 @@
   </div>
   <!-- ./banner -->
 
-
-
-
-
-
   <main>
     <div class="width-full relative">
       <a class="btn btn-primary traveller" href="#allTypes"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
@@ -123,7 +118,7 @@
         <div class="row">
           <ul class="nav nav-tabs hidden-xs">
 
-            <li class="active">
+            <li class="active articles-tabs">
               <a data-toggle="tab" href="#menu1">
                 <img class="unhover" src="assets/img/icons/13.svg" alt="" />
                 <img class="hover" src="assets/img/icons/23.svg" alt="" />
@@ -131,7 +126,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="articles-tabs">
               <a data-toggle="tab" href="#menu2">
                 <img class="unhover" src="assets/img/icons/14.svg" alt="" />
                 <img class="hover" src="assets/img/icons/22.svg" alt="" />
@@ -139,7 +134,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="articles-tabs">
               <a data-toggle="tab" href="#menu3">
                 <img class="unhover" src="assets/img/icons/15.svg" alt="" />
                 <img class="hover" src="assets/img/icons/21.svg" alt="" />
@@ -553,12 +548,12 @@
             <h3 class="title">بر چسب ها</h3>
             <div class="fancy-divider"></div>
             <div class="tags">
-              <a href="#" class="btn btn-primary">تئوری</a>
-              <a href="#" class="btn btn-warning">ایلاستریتر</a>
-              <a href="#" class="btn btn-info">خبر</a>
-              <a href="#" class="btn btn-success">آموزش</a>
-              <a href="#" class="btn btn-light">افتر افکت</a>
-              <a href="#" class="btn btn-danger">مقاله</a>
+              <a href="#" class="tag btn btn-primary">تئوری</a>
+              <a href="#" class="tag btn btn-warning">ایلاستریتر</a>
+              <a href="#" class="tag btn btn-info">خبر</a>
+              <a href="#" class="tag btn btn-success">آموزش</a>
+              <a href="#" class="tag btn btn-light">افتر افکت</a>
+              <a href="#" class="tag btn btn-danger">مقاله</a>
             </div>
 
             <h3 class="title">پست های مرتبط</h3>
@@ -636,7 +631,7 @@
             <!-- ./post-related -->
           </div>
         </div>
-        <div class="fancy-divider"></div>
+        <div class="fancy-divider fancy-divider-common"></div>
       </div>
     </div>
 
@@ -645,17 +640,17 @@
         <div class="row">
           <div class="col-sm-4 col-md-4">
             <a href="#">
-              <img src="assets/img/sponsors/animate%20logo.svg" alt="">
+              <img class="sponser-img" src="assets/img/sponsors/animate%20logo.svg" alt="">
             </a>
           </div>
           <div class="col-sm-4 col-md-4">
             <a href="#">
-              <img class="navabeq" src="assets/img/sponsors/navabeq.svg" alt="">
+              <img class="navabeq sponser-img" src="assets/img/sponsors/navabeq.svg" alt="">
             </a>
           </div>
           <div class="col-sm-4 col-md-4">
             <a href="#">
-              <img src="assets/img/sponsors/sage%20logo.svg" alt="">
+              <img class="sponser-img" src="assets/img/sponsors/sage%20logo.svg" alt="">
             </a>
           </div>
         </div>
@@ -707,7 +702,7 @@
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-5">
-          <div class="contact-us">
+          <div class="contact-us contact-us-footer">
             <h4>تماس با ما</h4>
             <ul class="list-unstyled">
               <li>
@@ -736,8 +731,8 @@
           <ul class="list-unstyled list-inline">
             <li>
               <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li>
+            </tag li>
+            <tag li>
               <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
             </li>
             <li>
@@ -753,11 +748,9 @@
   </div>
   <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="assets/features/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/features/bootsnav/js/bootsnav.js"></script>
   <script src="assets/features/stickyjs/jquery.sticky.js"></script>
   <script src="assets/features/owl-carousel/js/owl.carousel.js"></script>
   <script src="assets/features/main/js/main.js"></script>
-</body>
-
-</html>

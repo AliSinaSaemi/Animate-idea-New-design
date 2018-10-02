@@ -373,9 +373,6 @@ a.google:hover {
     background-color: #962c46;
     color: #fff; }
 
-body.loader-in {
-  overflow: hidden; }
-
 .loader {
   position: fixed;
   display: block;
