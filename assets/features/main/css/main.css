@@ -205,6 +205,9 @@ h6 {
 .iransans-font {
   font-family: "IRANSans"; }
 
+body {
+  font-family: 'IRANSans'; }
+
 main {
   overflow: hidden; }
 
@@ -372,6 +375,8 @@ a.google:hover {
   .traveller:focus, .traveller:hover {
     background-color: #962c46;
     color: #fff; }
+  .traveller i {
+    margin-top: 7px; }
 
 .loader {
   position: fixed;
@@ -1415,10 +1420,10 @@ footer {
       font-size: 35px; }
     .about-us .content > p {
       font-family: 'IRANSans';
-      font-size: 25px;
-      line-height: 60px; }
+      font-size: 18px;
+      line-height: 30px; }
       .about-us .content > p:nth-child(3) {
-        margin-bottom: 100px; }
+        margin-bottom: 50px; }
   .about-us .fancy-btn-2 {
     margin-top: 40px; }
     .about-us .fancy-btn-2 p {
