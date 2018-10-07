@@ -73,8 +73,7 @@ $(window).on('load', function () {
       interval: 6,
       duration: 1000
     });
-    ScrollReveal().reveal('.article', {
-      interval: 6,
+    ScrollReveal().reveal('.writer-article', {
       duration: 1500,
       origin: 'top',
       scale: 0.8
@@ -99,14 +98,6 @@ $(window).on('load', function () {
       distance: '40px',
     };
     ScrollReveal().reveal('.banner-img', bannerImg);
-    var pagination = {
-      delay: 200,
-      duration: 1500,
-      origin: 'bottom',
-      distance: '40px',
-      scale: 0.7
-    };
-    ScrollReveal().reveal('.pagination', pagination);
     var bannerDetail = {
       delay: 700,
       duration: 1500,
@@ -115,7 +106,6 @@ $(window).on('load', function () {
       scale: 0.8
     };
     ScrollReveal().reveal('.banner-detail', bannerDetail);
-    ScrollReveal().reveal('.side-menu', bannerDetail);
     var form = {
       delay: 300,
       duration: 1500,
