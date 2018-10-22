@@ -10,7 +10,7 @@
     transform: rotate(165deg);
   }
   .item-2 {
-        left: -45px;
+    left: -45px;
     bottom: 130px;
   }
   .content {
@@ -39,7 +39,7 @@
       width: 280px;
       font-size: 17px;
       margin: 2px;
-          padding: 13px 30px;
+      padding: 13px 30px;
     }
   }
   .boy-top,
@@ -55,5 +55,22 @@
   .boy-top {
     left: 110px;
     top: -145px;
+  }
+}
+
+@-moz-document url-prefix() {
+  @media(max-width: 1300px) {
+    .about-us {
+      .group-circles {
+        display: none;
+      }
+    }
+  }
+  @media(max-width: 992px) {
+    .about-us {
+      .boy-bottom {
+        display: none;
+      }
+    }
   }
 }

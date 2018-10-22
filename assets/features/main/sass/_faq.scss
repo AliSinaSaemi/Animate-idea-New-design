@@ -98,3 +98,11 @@
     bottom: 103px;
   }
 }
+
+@-moz-document url-prefix() {
+  .faq {
+    .circle {
+      display: none;
+    }
+  }
+}

@@ -265,3 +265,20 @@
     }
   }
 }
+
+@-moz-document url-prefix() {
+  @media(min-width: 992px) and (max-width: 1200px) {
+    .articles {
+      .side-menu {
+        .post-related {
+          .picture {
+            width: 25% !important;
+          }
+          .detail {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}

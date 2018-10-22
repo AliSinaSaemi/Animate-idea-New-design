@@ -104,3 +104,11 @@
     top: 103px;
   }
 }
+
+@-moz-document url-prefix() {
+  .selected-article {
+    .circle {
+      display: none;
+    }
+  }
+}

@@ -163,3 +163,12 @@
     top: 103px;
   }
 }
+
+@-moz-document url-prefix() {
+      .testimonial {
+    .item-1 {
+      display: none;
+    }
+  }
+  
+}
