@@ -899,6 +899,10 @@ a.google:hover {
   main {
     overflow: inherit; }
 
+  .searchop input {
+    padding: 0 10px;
+    height: 47px; }
+
   .traveller {
     top: 35%; }
 
