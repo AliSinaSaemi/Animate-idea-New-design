@@ -938,6 +938,12 @@ a {
   main {
     overflow: inherit;
   }
+  .searchop {
+    input {
+      padding: 0;
+      height: 47px;
+    }
+  }
   .traveller {
     top: 35%;
   }
