@@ -28,7 +28,7 @@
     <![endif]-->
 </head>
 
-<body class="loader-in">
+<body>
   <div class="loader relative">
     <img class="center-block" src="assets/img/errors/loading.gif" alt="404">
   </div>
@@ -55,9 +55,29 @@
         </div>
         <div class="attr-nav">
           <ul>
+            <!-- <select>
+              <option value="0">Select car:</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+            </select> -->
+
+            <li class="dropdown carts-lang">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="assets/img/icons/language.svg" alt="" />
+              </a>
+              <ul class="dropdown-menu">
+                <select class="langs-list">
+                  <option value="0">فارسی (fa)</option>
+                  <option value="1">English (en)</option>
+                  <option value="2">français (fr)</option>
+                </select>
+              </ul>
+            </li>
+
             <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
             <li class="link"><a href="#">ثبت نام</a></li>
             <li class="link"><a href="#">ورود</a></li>
+            </li>
           </ul>
         </div>
         <!-- Start Header Navigation -->
@@ -70,13 +90,22 @@
             <li class="hidden-md hidden-lg iransans-font">
               <input class="form-control" type="text" placeholder="جستجو کنید ...">
             </li>
+            <li class="show-xs">
+              <select class="langs-list">
+                <option value="0">فارسی (fa)</option>
+                <option value="1">English (en)</option>
+                <option value="2">français (fr)</option>
+              </select>
+            </li>
             <li><a href="#">خانه</a></li>
             <li><a href="#">نمونه کار</a></li>
-            <li><a href="#">درباره ما</a></li>
+            <li class="active"><a href="#">درباره ما</a></li>
             <li><a href="#">تعرفه خدمات</a></li>
             <li><a href="#">مقالات</a></li>
-            <li class="active"><a href="#">تماس با ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
             <li><a href="#">پرسش و پاسخ متداول</a></li>
+            <li class="show-xs"><a href="#">ثبت نام</a></li>
+            <li class="show-xs"><a href="#">ورود</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->

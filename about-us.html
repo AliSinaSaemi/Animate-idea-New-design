@@ -55,9 +55,29 @@
         </div>
         <div class="attr-nav">
           <ul>
+            <!-- <select>
+              <option value="0">Select car:</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+            </select> -->
+
+            <li class="dropdown carts-lang">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="assets/img/icons/language.svg" alt="" />
+              </a>
+              <ul class="dropdown-menu">
+                <select class="langs-list">
+                  <option value="0">فارسی (fa)</option>
+                  <option value="1">English (en)</option>
+                  <option value="2">français (fr)</option>
+                </select>
+              </ul>
+            </li>
+
             <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
             <li class="link"><a href="#">ثبت نام</a></li>
             <li class="link"><a href="#">ورود</a></li>
+            </li>
           </ul>
         </div>
         <!-- Start Header Navigation -->
@@ -70,6 +90,13 @@
             <li class="hidden-md hidden-lg iransans-font">
               <input class="form-control" type="text" placeholder="جستجو کنید ...">
             </li>
+            <li class="show-xs">
+              <select class="langs-list">
+                <option value="0">فارسی (fa)</option>
+                <option value="1">English (en)</option>
+                <option value="2">français (fr)</option>
+              </select>
+            </li>
             <li><a href="#">خانه</a></li>
             <li><a href="#">نمونه کار</a></li>
             <li class="active"><a href="#">درباره ما</a></li>
@@ -77,6 +104,8 @@
             <li><a href="#">مقالات</a></li>
             <li><a href="#">تماس با ما</a></li>
             <li><a href="#">پرسش و پاسخ متداول</a></li>
+            <li class="show-xs"><a href="#">ثبت نام</a></li>
+            <li class="show-xs"><a href="#">ورود</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -94,11 +123,14 @@
           <h4 class="lalezar-font page-name heading-style-2 text-center">درباره ما</h4>
           <ul class="list-inline list-unstyled text-center breadcrumbs">
             <li>
-              <h3><a href="#">خانه</a></h3></li>
+              <h3><a href="#">خانه</a></h3>
+            </li>
             <li class="arrow">
-              <h3><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></h3></li>
+              <h3><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></h3>
+            </li>
             <li>
-              <h3><a href="#">درباره ما</a></h3></li>
+              <h3><a href="#">درباره ما</a></h3>
+            </li>
           </ul>
         </div>
       </div>
@@ -122,9 +154,15 @@
             <img class="group-circles item-1" src="assets/img/banners-items/ellips-03.svg" alt="">
             <div class="content">
               <h3>ما به برند شما کمک میکنیم تا معرفی شناخته شود</h3>
-              <p>خیلی وقت ها شما ایده هایی دارید که برای بیان آن نیاز دارید تا انیمیشن آن ها را بسازید و ایده تان را به شکل انیمیشنی توصیف کنید. با کمک مشاورین ما به صورت آنلاین مشاوره بگیرید تا بیاموزید چگونه در شبکه های اجتماعیتان این انیمیشن ها را به نمایش در بیاورید تا بیشترین بازخورد را از نمایش آن داشته باشید</p>
-              <p>در صورتی که سوال دارید ابتدا لطفا به صفحه پرسش و پاسخ متداول های سایت ما بروید و اگر در آنجا پاسخ خود را نیافتید ، می توانید با ارسال تیکت به تیم پشتیبانی و یا با استفاده از چت آنلاین در ساعات کاری از مشاورین ما پرسش های خود را بپرسید</p>
-              <p>تیم انیمیتد آیدیا از افرادی خوش ذوق و سلیقه تشکیل شده است که هدف آن توسعه کسب و کار شما به بهترین شکل ممکن می باشد همچنین شما می توانید انیمیشن هایی در اپلیکیشن اندرویدی خود و وب سایت تان جهت تبلیغات نیز داشته باشید</p>
+              <p>خیلی وقت ها شما ایده هایی دارید که برای بیان آن نیاز دارید تا انیمیشن آن ها را بسازید و ایده تان را به
+                شکل انیمیشنی توصیف کنید. با کمک مشاورین ما به صورت آنلاین مشاوره بگیرید تا بیاموزید چگونه در شبکه های
+                اجتماعیتان این انیمیشن ها را به نمایش در بیاورید تا بیشترین بازخورد را از نمایش آن داشته باشید</p>
+              <p>در صورتی که سوال دارید ابتدا لطفا به صفحه پرسش و پاسخ متداول های سایت ما بروید و اگر در آنجا پاسخ خود
+                را نیافتید ، می توانید با ارسال تیکت به تیم پشتیبانی و یا با استفاده از چت آنلاین در ساعات کاری از
+                مشاورین ما پرسش های خود را بپرسید</p>
+              <p>تیم انیمیتد آیدیا از افرادی خوش ذوق و سلیقه تشکیل شده است که هدف آن توسعه کسب و کار شما به بهترین شکل
+                ممکن می باشد همچنین شما می توانید انیمیشن هایی در اپلیکیشن اندرویدی خود و وب سایت تان جهت تبلیغات نیز
+                داشته باشید</p>
               <div class="text-left">
                 <button type="submit" class="btn btn-default fancy-btn-2">
                   <p>معرفی تیم انیمیتد آیدیا</p>
@@ -199,7 +237,8 @@
               <img src="assets/img/logo/8.svg" alt="" />
             </div>
             <div class="content">
-              <p>تیم انیمیشن سازی انیمیتد آیدیا مفتخر است تا محصولات و خدمات شما را به بهترین شکل در شبکه های اجتماعی ارائه دهد.</p>
+              <p>تیم انیمیشن سازی انیمیتد آیدیا مفتخر است تا محصولات و خدمات شما را به بهترین شکل در شبکه های اجتماعی
+                ارائه دهد.</p>
               <a class="btn btn-default samim-font fancy-btn" href="#">بیشتر</a>
             </div>
           </div>
@@ -210,7 +249,8 @@
             <h4>تماس با ما</h4>
             <ul class="list-unstyled">
               <li>
-                <p>تهران - خیابان شریعتی - بالاتر از حسینیه ارشاد - جنب بیمارستان مفید - نبش بیگدلی پلاک ۱۱۴۲ - طبقه سوم</p>
+                <p>تهران - خیابان شریعتی - بالاتر از حسینیه ارشاد - جنب بیمارستان مفید - نبش بیگدلی پلاک ۱۱۴۲ - طبقه
+                  سوم</p>
               </li>
               <li>
                 <p class="phone-number">۰۲۱۲۲۹۰۲۴۹۳</p>
