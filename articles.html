@@ -48,6 +48,20 @@
       <!-- End Top Search -->
       <div class="container-fluid">
         <div class="navbar-header">
+          <li class="dropdown carts-lang hidden-lg hidden-md">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="assets/img/icons/language.svg" alt="" />
+            </a>
+            <ul class="dropdown-menu">
+              <div class="custom-select">
+                <select>
+                  <option value="0">فارسی (fa)</option>
+                  <option value="1">English (en)</option>
+                  <option value="2">français (fr)</option>
+                </select>
+              </div>
+            </ul>
+          </li>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
             <i class="fa fa-bars"></i>
           </button>
@@ -61,6 +75,9 @@
               <option value="2">BMW</option>
             </select> -->
 
+            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+            <li class="link"><a href="#">ثبت نام</a></li>
+            <li class="link"><a href="#">ورود</a></li>
             <li class="dropdown carts-lang">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="assets/img/icons/language.svg" alt="" />
@@ -75,10 +92,6 @@
                 </div>
               </ul>
             </li>
-
-            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-            <li class="link"><a href="#">ثبت نام</a></li>
-            <li class="link"><a href="#">ورود</a></li>
             </li>
           </ul>
         </div>
@@ -92,15 +105,8 @@
             <li class="hidden-md hidden-lg iransans-font">
               <input class="form-control" type="text" placeholder="جستجو کنید ...">
             </li>
-            <li class="show-xs">
-              <div class="custom-select">
-                <select>
-                  <option value="0">فارسی (fa)</option>
-                  <option value="1">English (en)</option>
-                  <option value="2">français (fr)</option>
-                </select>
-              </div>
-            </li>
+            <li class="show-xs"><a href="#">ثبت نام</a></li>
+            <li class="show-xs"><a href="#">ورود</a></li>
             <li><a href="#">خانه</a></li>
             <li><a href="#">نمونه کار</a></li>
             <li class="active"><a href="#">درباره ما</a></li>
@@ -108,8 +114,6 @@
             <li><a href="#">مقالات</a></li>
             <li><a href="#">تماس با ما</a></li>
             <li><a href="#">پرسش و پاسخ متداول</a></li>
-            <li class="show-xs"><a href="#">ثبت نام</a></li>
-            <li class="show-xs"><a href="#">ورود</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -126,11 +130,14 @@
           <h4 class="lalezar-font page-name heading-style-2 text-center">تعرفه خدمات</h4>
           <ul class="list-inline list-unstyled text-center breadcrumbs">
             <li>
-              <h3><a href="#">خانه</a></h3></li>
+              <h3><a href="#">خانه</a></h3>
+            </li>
             <li class="arrow">
-              <h3><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></h3></li>
+              <h3><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></h3>
+            </li>
             <li>
-              <h3><a href="#">تعرفه خدمات</a></h3></li>
+              <h3><a href="#">تعرفه خدمات</a></h3>
+            </li>
           </ul>
         </div>
       </div>
@@ -150,8 +157,8 @@
         <div class="row">
           <ul class="nav nav-tabs hidden-xs">
 
-            <li class="active articles-tabs">
-              <a data-toggle="tab" href="#menu1">
+            <li class="articles-tabs">
+              <a class="active" href="#">
                 <img class="unhover" src="assets/img/icons/13.svg" alt="" />
                 <img class="hover" src="assets/img/icons/23.svg" alt="" />
                 <p class="text-center">خبر</p>
@@ -159,7 +166,7 @@
             </li>
 
             <li class="articles-tabs">
-              <a data-toggle="tab" href="#menu2">
+              <a href="#">
                 <img class="unhover" src="assets/img/icons/14.svg" alt="" />
                 <img class="hover" src="assets/img/icons/22.svg" alt="" />
                 <p class="text-center">مقاله</p>
@@ -167,7 +174,7 @@
             </li>
 
             <li class="articles-tabs">
-              <a data-toggle="tab" href="#menu3">
+              <a href="#">
                 <img class="unhover" src="assets/img/icons/15.svg" alt="" />
                 <img class="hover" src="assets/img/icons/21.svg" alt="" />
                 <p class="text-center">آموزش</p>
@@ -177,7 +184,7 @@
 
           <ul class="nav nav-tabs nav-tabs-common hidden-sm hidden-md hidden-lg">
             <li class="active">
-              <a data-toggle="tab" href="#menu1">
+              <a href="#">
                 <p class="text-center">خبر</p>
               </a>
             </li>
@@ -185,7 +192,7 @@
               <p>|</p>
             </li>
             <li>
-              <a data-toggle="tab" href="#menu2">
+              <a href="#">
                 <p class="text-center">مقاله</p>
               </a>
             </li>
@@ -193,366 +200,135 @@
               <p>|</p>
             </li>
             <li>
-              <a data-toggle="tab" href="#menu3">
+              <a href="#">
                 <p class="text-center">آموزش</p>
               </a>
             </li>
           </ul>
 
           <div class="col-md-8">
-            <div class="tab-content">
-              <div id="menu1" class="tab-pane fade in active">
-                <div class="form-group searchop hidden-sm hidden-md hidden-lg">
-                  <input class="form-control" placeholder="جستجو کنید ..." />
-                  <button type="submit" class="btn btn-default">
-                    <img class="img-reponsive" src="assets/img/icons/16.svg" alt="" />
-                  </button>
-                </div>
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <section class="text-center" aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" class="next" aria-label="Previous">
-                        <p>بعدی</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>5</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>4</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>3</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>2</p>
-                      </a>
-                    </li>
-                    <li class="count-page active">
-                      <a href="#">
-                        <p>1</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="prev" aria-label="Next">
-                        <p>قبلی</p>
-                      </a>
-                    </li>
-                  </ul>
-                </section>
+            <div id="menu1">
+              <div class="form-group searchop hidden-sm hidden-md hidden-lg">
+                <input class="form-control" placeholder="جستجو کنید ..." />
+                <button type="submit" class="btn btn-default">
+                  <img class="img-reponsive" src="assets/img/icons/16.svg" alt="" />
+                </button>
               </div>
-              <!-- #/menu1 -->
+              <div class="col-md-6 article">
+                <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
+                <div class="content">
+                  <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
+                  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                    نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
+                  </p>
+                  <div class="fancy-divider"></div>
 
-              <div id="menu2" class="tab-pane fade">
-
-                <div class="form-group searchop hidden-sm hidden-md hidden-lg">
-                  <input class="form-control" placeholder="جستجو کنید ..." />
-                  <button type="submit" class="btn btn-default">
-                    <img class="img-reponsive" src="assets/img/icons/16.svg" alt="" />
-                  </button>
-                </div>
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
+                  <div class="display-flex flex-r">
+                    <div class="right seen">
+                      <p class="count">123</p>
                     </div>
+                    <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
                   </div>
                 </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <section class="text-center" aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" class="next" aria-label="Previous">
-                        <p>بعدی</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>5</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>4</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>3</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>2</p>
-                      </a>
-                    </li>
-                    <li class="count-page active">
-                      <a href="#">
-                        <p>1</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="prev" aria-label="Next">
-                        <p>قبلی</p>
-                      </a>
-                    </li>
-                  </ul>
-                </section>
               </div>
-              <!-- #/menu2 -->
+              <!-- ./article -->
+              <div class="col-md-6 article">
+                <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
+                <div class="content">
+                  <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
+                  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                    نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
+                  </p>
+                  <div class="fancy-divider"></div>
 
-              <div id="menu3" class="tab-pane fade">
-                <div class="form-group searchop hidden-sm hidden-md hidden-lg">
-                  <input class="form-control" placeholder="جستجو کنید ..." />
-                  <button type="submit" class="btn btn-default">
-                    <img class="img-reponsive" src="assets/img/icons/16.svg" alt="" />
-                  </button>
-                </div>
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
+                  <div class="display-flex flex-r">
+                    <div class="right seen">
+                      <p class="count">123</p>
                     </div>
+                    <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
                   </div>
                 </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <div class="col-md-6 article">
-                  <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
-                  <div class="content">
-                    <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
-                    </p>
-                    <div class="fancy-divider"></div>
-
-                    <div class="display-flex flex-r">
-                      <div class="right seen">
-                        <p class="count">123</p>
-                      </div>
-                      <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ./article -->
-                <section class="text-center" aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" class="next" aria-label="Previous">
-                        <p>بعدی</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>5</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>4</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>3</p>
-                      </a>
-                    </li>
-                    <li class="count-page">
-                      <a href="#">
-                        <p>2</p>
-                      </a>
-                    </li>
-                    <li class="count-page active">
-                      <a href="#">
-                        <p>1</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="prev" aria-label="Next">
-                        <p>قبلی</p>
-                      </a>
-                    </li>
-                  </ul>
-                </section>
               </div>
-              <!-- #/menu3 -->
+              <!-- ./article -->
+              <div class="col-md-6 article">
+                <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
+                <div class="content">
+                  <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
+                  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                    نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
+                  </p>
+                  <div class="fancy-divider"></div>
 
+                  <div class="display-flex flex-r">
+                    <div class="right seen">
+                      <p class="count">123</p>
+                    </div>
+                    <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- ./article -->
+              <div class="col-md-6 article">
+                <img class="img-responsive" src="assets/img/thumbs/moonlight.png" alt="">
+                <div class="content">
+                  <h5><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></h5>
+                  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                    نیاز و کاربردهای متنوع با هدف بهبود .ابزارهای کاربردی می باشد
+                  </p>
+                  <div class="fancy-divider"></div>
+
+                  <div class="display-flex flex-r">
+                    <div class="right seen">
+                      <p class="count">123</p>
+                    </div>
+                    <div class="left text-left"><a href="#" class="btn btn-default fancy-btn">ادامه</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- ./article -->
+              <section class="text-center" aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" class="next" aria-label="Previous">
+                      <p>بعدی</p>
+                    </a>
+                  </li>
+                  <li class="count-page">
+                    <a href="#">
+                      <p>5</p>
+                    </a>
+                  </li>
+                  <li class="count-page">
+                    <a href="#">
+                      <p>4</p>
+                    </a>
+                  </li>
+                  <li class="count-page">
+                    <a href="#">
+                      <p>3</p>
+                    </a>
+                  </li>
+                  <li class="count-page">
+                    <a href="#">
+                      <p>2</p>
+                    </a>
+                  </li>
+                  <li class="count-page active">
+                    <a href="#">
+                      <p>1</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="prev" aria-label="Next">
+                      <p>قبلی</p>
+                    </a>
+                  </li>
+                </ul>
+              </section>
             </div>
           </div>
           <div class="col-md-4 side-menu hidden-sm hidden-xs">
@@ -598,7 +374,8 @@
               </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                  و متون
                 </p>
               </div>
             </a>
@@ -609,7 +386,8 @@
               </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                  و متون
                 </p>
               </div>
             </a>
@@ -620,7 +398,8 @@
               </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                  و متون
                 </p>
               </div>
             </a>
@@ -632,7 +411,8 @@
               </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                  و متون
                 </p>
               </div>
             </a>
@@ -644,7 +424,8 @@
               </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                  و متون
                 </p>
               </div>
             </a>
@@ -656,7 +437,8 @@
               </div>
               <div class="detail">
                 <h4>لورم ایپسوم متن ساختگی با تولید سادگی</h4>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                  و متون
                 </p>
               </div>
             </a>
@@ -727,7 +509,8 @@
               <img src="assets/img/logo/8.svg" alt="" />
             </div>
             <div class="content">
-              <p>تیم انیمیشن سازی انیمیتد آیدیا مفتخر است تا محصولات و خدمات شما را به بهترین شکل در شبکه های اجتماعی ارائه دهد.</p>
+              <p>تیم انیمیشن سازی انیمیتد آیدیا مفتخر است تا محصولات و خدمات شما را به بهترین شکل در شبکه های اجتماعی
+                ارائه دهد.</p>
               <a class="btn btn-default samim-font fancy-btn" href="#">بیشتر</a>
             </div>
           </div>
@@ -738,7 +521,8 @@
             <h4>تماس با ما</h4>
             <ul class="list-unstyled">
               <li>
-                <p>تهران - خیابان شریعتی - بالاتر از حسینیه ارشاد - جنب بیمارستان مفید - نبش بیگدلی پلاک ۱۱۴۲ - طبقه سوم</p>
+                <p>تهران - خیابان شریعتی - بالاتر از حسینیه ارشاد - جنب بیمارستان مفید - نبش بیگدلی پلاک ۱۱۴۲ - طبقه
+                  سوم</p>
               </li>
               <li>
                 <p class="phone-number">۰۲۱۲۲۹۰۲۴۹۳</p>
