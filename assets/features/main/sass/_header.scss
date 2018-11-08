@@ -228,3 +228,22 @@ nav.navbar.bootsnav {
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+#translations {
+  position: absolute;
+  right: 40px;
+  bottom: 5px;
+  .translater {
+    img {
+      width: 50px;
+    }
+  }
+  .custom-select {
+    position: absolute;
+    width: 150px;
+    display: none;
+    &.display {
+      display: block;
+    }
+  }
+}

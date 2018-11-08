@@ -265,37 +265,6 @@
         background: none;
       }
 
-      .navbar-header {
-        .dropdown {
-          position: absolute;
-          list-style: none;
-
-          .dropdown-menu {
-            margin: 0;
-            padding: 0;
-          }
-
-          .custom-select {
-            .select-selected {
-              margin-top: -15px;
-            }
-          }
-
-          a {
-            &:before {
-              display: none;
-            }
-          }
-
-          img {
-            margin-top: 10px;
-            margin-right: 10px;
-            width: 50px;
-            width: 50px;
-          }
-        }
-      }
-
       .attr-nav {
         display: none;
       }
