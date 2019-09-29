@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-Artboard_2">
+      <rect width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" clip-path="url(#clip-Artboard_2)">
+    <rect width="200" height="200" fill="#fff"/>
+    <g id="Group_115" data-name="Group 115" transform="translate(-455.2 -87.2)">
+      <path id="Path_4" data-name="Path 4" d="M267.279,267.225h.014a3.08,3.08,0,0,0,1.688-.495l.132-.084a1.029,1.029,0,0,1,.091-.057l1.527-1.27,36.533-30.146a.42.42,0,0,0-.343-.173h-79.5a.416.416,0,0,0-.264.1l38.226,31.5a2.994,2.994,0,0,0,1.892.629ZM227,239.27v44.689l27.382-22.121Zm53,22.722,27.348,21.982V239.416Zm-8.695,7.174a6.517,6.517,0,0,1-8.032.007L257,264,227,288.23v.077a.433.433,0,0,0,.432.425h79.5a.431.431,0,0,0,.42-.425v-.07l-29.973-24.083Zm0,0" transform="translate(289.478 -74.55)" fill="#b89b5e"/>
+      <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(466 98)" fill="none" stroke="#b89b5e" stroke-width="1">
+        <circle cx="89.2" cy="89.2" r="89.2" stroke="none"/>
+        <circle cx="89.2" cy="89.2" r="88.7" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,160 @@
+/***************************** 
+
+          GLOBAL
+
+********************************/
+
+
+body {
+    margin: 0;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.width-squre {
+    width: 25px;
+}
+
+.width-half {
+    width: 50%;
+}
+
+.width-three {
+    width: 75%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.fd-rr {
+    flex-direction: row-reverse;
+}
+
+.fd-r {
+    flex-direction: row;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.relative {
+    position: relative;
+}
+
+.opacity-1 {
+    opacity: 1 !important;
+}
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.index-1 {
+    z-index: 1;
+}
+
+.index-2 {
+    z-index: 2;
+}
+
+.index-3 {
+    z-index: 3;
+}
+
+.center-absolute {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+
+
+.text_bold {
+    font-weight: bold;
+}
+
+.text-jutify {
+    text-align: justify;
+}
+
+.vazir {
+    font-family: 'vazir';
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1.heading-style-1,
+h2.heading-style-1,
+h3.heading-style-1,
+h4.heading-style-1,
+h5.heading-style-1,
+h6.heading-style-1 {
+    font-size: 35px;
+}
+
+h1.heading-style-2,
+h2.heading-style-2,
+h3.heading-style-2,
+h4.heading-style-2,
+h5.heading-style-2,
+h6.heading-style-2 {
+    font-size: 29px;
+}
+
+h1.heading-style-3,
+h2.heading-style-3,
+h3.heading-style-3,
+h4.heading-style-3,
+h5.heading-style-3,
+h6.heading-style-3 {
+    font-size: 23px;
+}
+
+h1.heading-style-4,
+h2.heading-style-4,
+h3.heading-style-4,
+h4.heading-style-4,
+h5.heading-style-4,
+h6.heading-style-4 {
+    font-size: 16px;
+}
+
+h1.heading-style-5,
+h2.heading-style-5,
+h3.heading-style-5,
+h4.heading-style-5,
+h5.heading-style-5,
+h6.heading-style-5 {
+    font: bold 16px;
+}
+
+h1.heading-style-6,
+h2.heading-style-6,
+h3.heading-style-6,
+h4.heading-style-6,
+h5.heading-style-6,
+h6.heading-style-6 {
+    font-size: 14px;
+}

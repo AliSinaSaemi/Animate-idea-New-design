@@ -1,467 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Animate idea | Home</title>
+  <title>Law suit</title>
 
-  <link rel="icon" type="image/svg" href="assets/img/logo/animate%20idea-2.svg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/features/bootstrap/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/features/font-awsome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/features/vazir/vazir-font/css/main.css" />
   <link rel="stylesheet" href="assets/features/font_num/css/fontiran.css" />
   <link rel="stylesheet" href="assets/features/font/iran-sans/css/fontiran.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
-  <link rel="stylesheet" href="assets/features/samim-font/style.css" />
   <link rel="stylesheet" href="assets/features/hover/css/hover.css" />
-  <link rel="stylesheet" href="assets/features/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/features/bootstrap/rtl/css/bootstrap-rtl.min.css" />
-  <link rel="stylesheet" href="assets/features/bootsnav/css/bootsnav.css" />
   <link rel="stylesheet" href="assets/features/owl-carousel/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/features/owl-carousel/css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="assets/features/main/css/main.css" />
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
-<body>
-  <div class="loader relative">
-    <img class="center-block" src="assets/img/errors/loading.gif" alt="404">
+<body class="rtl">
+  <div id='cssmenu'>
+    <ul class="vazir">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <li class="active"><a href='#'><span>خانه</span></a></li>
+      <li class='has-sub'><a href='#'><span>مقاله<i class="fas fa-angle-down"></i></span></a>
+        <ul>
+          <li class="active"><a href='#'><span>کیفری</span></a></li>
+          <li><a href='#'><span>حقوقی</span></a></li>
+          <li><a href='#'><span>خانواده</span></a></li>
+          <li><a href='#'><span>ثبتی</span></a></li>
+          <li class='last'><a href='#'><span>بانکی</span></a></li>
+        </ul>
+      </li>
+      <li class='has-sub'><a href='#'><span>مطالب حقوقی<i class="fas fa-angle-down"></i></span></a>
+        <ul>
+          <li><a href='#'><span>کیفری</span></a></li>
+          <li><a href='#'><span>حقوقی</span></a></li>
+          <li><a href='#'><span>خانواده</span></a></li>
+          <li><a href='#'><span>ثبتی</span></a></li>
+          <li class='last'><a href='#'><span>بانکی</span></a></li>
+        </ul>
+      </li>
+      <li><a href='#'><span>دریافت مشاوره</span></a>
+      <li><a href='#'><span>قوانین</span></a>
+      <li><a href='#'><span>تماس با ما</span></a>
+      <li><a href='#'><span>درباره ما</span></a>
+
+
+      <li class='last'><a href='#'><span>معرفی داور
+            و
+            شرکت های وصول مطالبات</span></a></li>
+    </ul>
   </div>
-  <header>
-    <nav class="navbar navbar-default bootsnav navbar-sticky">
-
-      <!-- Start Top Search -->
-      <div class="top-search">
-        <div class="container">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-            <input type="text" class="form-control" placeholder="جستجو کنید ...">
-            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-          </div>
-        </div>
-      </div>
-      <!-- End Top Search -->
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <div id="translations" class="hidden-lg hidden-md">
-            <a href="#" class="translater">
-              <img src="assets/img/icons/language.svg" alt="" />
-            </a>
-            <div class="custom-select">
-              <select>
-                <option value="0">فارسی (fa)</option>
-                <option value="1">English (en)</option>
-                <option value="2">français (fr)</option>
-              </select>
-            </div>
-          </div>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-            <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand" href="#brand"><img src="assets/img/logo/LOGO.png" class="navbar-logo" alt=""></a>
-        </div>
-        <div class="attr-nav">
-          <ul>
-            <!-- <select>
-              <option value="0">Select car:</option>
-              <option value="1">Audi</option>
-              <option value="2">BMW</option>
-            </select> -->
-
-            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-            <li class="link"><a href="#">ثبت نام</a></li>
-            <li class="link"><a href="#">ورود</a></li>
-            <li class="dropdown carts-lang">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="assets/img/icons/language.svg" alt="" />
-              </a>
-              <ul class="dropdown-menu">
-                <div class="custom-select">
-                  <select>
-                    <option value="0">فارسی (fa)</option>
-                    <option value="1">English (en)</option>
-                    <option value="2">français (fr)</option>
-                  </select>
-                </div>
-              </ul>
-            </li>
-            </li>
-          </ul>
-        </div>
-        <!-- Start Header Navigation -->
-
-        <!-- End Header Navigation -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-menu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="hidden-md hidden-lg iransans-font">
-              <input class="form-control" type="text" placeholder="جستجو کنید ...">
-            </li>
-            <li class="show-xs"><a href="#">ثبت نام</a></li>
-            <li class="show-xs"><a href="#">ورود</a></li>
-            <li><a href="#">خانه</a></li>
-            <li><a href="#">نمونه کار</a></li>
-            <li class="active"><a href="#">درباره ما</a></li>
-            <li><a href="#">تعرفه خدمات</a></li>
-            <li><a href="#">مقالات</a></li>
-            <li><a href="#">تماس با ما</a></li>
-            <li><a href="#">پرسش و پاسخ متداول</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-    </nav>
-  </header>
-
-  <div class="banner bg-1">
+  <section class="top_quote">
     <div class="container-fluid">
+      <div class="row text-center vazir">
+        <div class="col-lg-7 col-md-7">
+          <h4>جایی که قانون به پایان رسد، ظلم آغاز می شود</h4>
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <h4>جان لاک</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="top_info">
+    <div class="container vazir">
       <div class="row">
-        <div class="col-sm-5 col-md-6">
-          <img class="banner-img" src="assets/img/thumbs/landind.svg" alt="">
+        <div class="col-xl-4 col-lg-4 col-md-2 col-sm-2">
+          <p class="d-none d-lg-block">سید ولی نوراشرف الدین وکیل پایه دادگستری</p>
+          <i onclick="openNav()" class="fas fa-bars menu-bar"></i>
         </div>
-        <div class="col-sm-7 col-md-6 banner-detail">
-          <h4 class="lalezar-font heading-style-2"> انیمیتد آیدیا محصول ، خدمات و ثبت اختراع خود را
-به صورت انیمیش  در شبکه های اجتماعی ن
-به مخاطبانتان معر کنید.</h4>
-          <div class="anchor">
-            <a href="#" class="btn btn-default samim-font fancy-btn banner-btn">ثبت سفارش</a>
-          </div>
-        </div>
-      </div>
-      <!-- ./row -->
-    </div>
-    <!-- ./container-fluid -->
-
-  </div>
-  <!-- ./banner -->
-
-  <main>
-
-    <div class="width-full relative">
-      <a class="btn btn-primary traveller" href="#allTypes"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-      <img class="img-responsive wave-top certain-page" src="assets/img/backgrounds/wave-1-01.png" alt="">
-    </div>
-    <div id="allTypes" class="all-types circle-bg">
-
-      <img class="circle item-1" src="assets/img/icons/1.svg" alt="">
-      <img class="circle item-2" src="assets/img/icons/2.svg" alt="">
-      <img class="circle item-3" src="assets/img/icons/3.svg" alt="">
-      <img class="circle item-4" src="assets/img/icons/4.svg" alt="">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 hidden-sm hidden-xs">
-            <div class="genius-type">
-              <img class="student" src="assets/img/characters/character-1.svg" alt="">
-              <h3 class="title">عضو حامی نوابغ جوان هستم</h3>
-              <p>
-                برای افرادی که <a href="#" class="important">عضو حامی نوابغ جوان</a> هستند ، علاوه بر تخفیف ویزه به آن ها یک بار مشاوره رایگان در رابطه با شیوه پخش کلیپ انیمیشنی داده می شود.
-              </p>
-              <p class="warning">
-                *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
-              </p>
-            </div>
-            <!-- ./genius-type -->
-          </div>
-          <div class="col-md-6 hidden-sm hidden-xs">
-
-            <div class="normal-type">
-              <img class="student" src="assets/img/characters/character-2.svg" alt="">
-              <h3 class="title">عضو حامی نوابغ جوان نیستم</h3>
-              <p>
-                افرادی که شرایط نوابغ را ندارند نیز می توانند با مطالعه ی برنامه ی درآمدزایی پنل از خدمات ما استفاده کنند (در حال به روز رسانی . )
-              </p>
-              <p class="warning">
-                *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
-              </p>
-            </div>
-            <!-- ./normal-type -->
-          </div>
-
-          <div class="col-md-6 hidden-md hidden-lg">
-
-            <div class="normal-type">
-              <img src="assets/img/characters/character-1.svg" alt="">
-              <h3 class="title">عضو حامی نوابغ جوان هستم</h3>
-              <p>
-                برای افرادی که <a href="#" class="important">عضو حامی نوابغ جوان</a> هستند ، علاوه بر تخفیف ویزه به آن ها یک بار مشاوره رایگان در رابطه با شیوه پخش کلیپ انیمیشنی داده می شود.
-              </p>
-              <p class="warning opacity-1">
-                *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
-              </p>
-            </div>
-            <!-- ./normal-type -->
-          </div>
-
-          <div class="col-md-6 hidden-md hidden-lg">
-            <div class="genius-type">
-              <img src="assets/img/characters/character-2.svg" alt="">
-
-              <h3 class="title">عضو حامی نوابغ جوان نیستم</h3>
-              <p>
-                افرادی که شرایط نوابغ را ندارند نیز می توانند با مطالعه ی برنامه ی درآمدزایی پنل از خدمات ما استفاده کنند (در حال به روز رسانی . )
-              </p>
-              <p class="warning opacity-0">
-                *در صورتی که در پنل شما قابلیت ها فعال نشده است ، می توانید در پنل یک تیکت ارسال کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.
-              </p>
-            </div>
-            <!-- ./genius-type -->
-          </div>
-        </div>
-        <!-- ./row -->
-      </div>
-      <!-- ./container -->
-    </div>
-    <!-- ./all-types -->
-    <img class="img-responsive wave-bottom" src="assets/img/backgrounds/wave-4-01.png" alt="" />
-    <img class="img-responsive wave-bottom-xs" src="assets/img/backgrounds/wave-responsive-01.png" alt="" />
-
-    <div class="skills-landing bg-2 ">
-      <div class="container hidden-xs">
-        <div class="row">
-          <div class="col-md-5">
-
-            <div class="display-flex flex-r skills-items">
-              <img src="assets/img/icons/9.svg" alt="">
-              <div class="details">
-                <h3 class="title">حفظ سرمایه</h3>
-                <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
-              </div>
-            </div>
-            <!-- ./display-flex -->
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-5">
-            <div class="display-flex flex-r skills-items">
-              <img src="assets/img/icons/10.svg" alt="">
-              <div class="details">
-                <h3 class="title">تجربه ای جدید</h3>
-                <p>با استفاده از پنل مدیریتی خود به راحتی می توانید بررسی کنید که پروژه تان در چه مرحله ای قرار دارد و تمامی اخبار در آنجا به شما داده می شود.</p>
-              </div>
-            </div>
-            <!-- ./display-flex -->
-          </div>
-
-          <div class="col-md-5 col-md-offset-4">
-            <div class="display-flex flex-r skills-items">
-              <img src="assets/img/icons/11.svg" alt="">
-              <div class="details">
-                <h3 class="title">تجربه ای جدید</h3>
-                <p>با استفاده از پنل مدیریتی خود به راحتی می توانید بررسی کنید که پروژه تان در چه مرحله ای قرار دارد و تمامی اخبار در آنجا به شما داده می شود.</p>
-              </div>
-            </div>
-            <!-- ./display-flex -->
-          </div>
-
-        </div>
-        <!-- ./row -->
-      </div>
-      <div id="owl-two" class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="display-flex flex-r">
-            <img src="assets/img/icons/9.svg" alt="">
-            <div class="details">
-              <h3 class="title">حفظ سرمایه</h3>
-              <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
+        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12">
+          <div class="phone d-flex fd-r">
+            <img src="assets/img/svg/phone.svg" alt="" />
+            <div class="text">
+              <p>تلفن :</p>
+              <p class="ltr">0911 153 2593</p>
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="display-flex flex-r">
-            <img src="assets/img/icons/10.svg" alt="">
-            <div class="details">
-              <h3 class="title">حفظ سرمایه</h3>
-              <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="display-flex flex-r">
-            <img src="assets/img/icons/11.svg" alt="">
-            <div class="details">
-              <h3 class="title">حفظ سرمایه</h3>
-              <p>با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمیشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند.</p>
+        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12">
+          <div class="email d-flex fd-r">
+            <img src="assets/img/svg/email.svg" alt="" />
+            <div class="text">
+              <p>ایمیل :</p>
+              <p>a.s.a.j.2016@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- ./container -->
     </div>
-    <!-- ./skills-landing -->
-
-    <img class="img-responsive wave-top" src="assets/img/backgrounds/wave-1-01.png" alt="" />
-    <div class="todo-landing circle-bg">
-      <img class="circle item-1" src="assets/img/icons/1.svg" alt="">
-      <img class="circle item-2" src="assets/img/icons/1.svg" alt="">
-      <img class="circle item-3" src="assets/img/icons/2.svg" alt="">
-      <img class="circle item-4" src="assets/img/icons/3.svg" alt="">
-      <img class="circle item-4" src="assets/img/icons/3.svg" alt="">
-      <img class="circle item-5" src="assets/img/icons/3.svg" alt="">
-      <img class="circle item-6" src="assets/img/icons/4.svg" alt="">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="display-flex flex-r todo-items">
-              <img class="hidden-xs" src="assets/img/icons/6.svg" alt="">
-              <div class="details">
-                <h3 class="title">۱ - ثبت نام</h3>
-                <p>پس از ثبت نام ، شما می توانید در پنل مدیریتی خود به راحتی پروژه های خود را مدیریت کنید. </p>
-              </div>
-            </div>
-          </div>
-          <!-- ./col-md-7 -->
-          <div class="fancy-divider width-half center-block hidden-sm hidden-md hidden-lg"></div>
-          <div class="col-md-5"></div>
-          <div class="col-md-7 col-md-offset-5">
-            <div class="display-flex flex-rr todo-items">
-              <img class="hidden-xs" src="assets/img/icons/5.svg" alt="">
-              <div class="details">
-                <h3 class="title">۲ - ثبت سفارش و طراحی انیمیشن</h3>
-                <p>پس از ثبت سفارش خود در پنل مدیریتی ، تیم طراحی با دقت تمامی توضیحات و اطلاعاتی را که در داشبوردتان وارد کرده اید ، مطالعه کرده و با خلاقیت و ظرافت ، طراحی انیمیشن شما را آغاز می کنند.</p>
-              </div>
-            </div>
-          </div>
-          <div class="fancy-divider width-half center-block hidden-sm hidden-md hidden-lg"></div>
-          <!-- ./col-md-7 -->
-          <div class="col-md-7">
-            <div class="display-flex flex-r todo-items">
-              <img class="hidden-xs" src="assets/img/icons/7.svg" alt="">
-              <div class="details">
-                <h3 class="title">۳ - تحویل پروژه</h3>
-                <p>در نهایت بعد از بررسی و طراحی انیمیشن ابتدا توسط ایمیل و تیکت به شما اطلاع داده می شود. بنابراین به راحتی می توانید سفارشتان را از پنل مدیریتیتان دانلود نماييد.</p>
-              </div>
-            </div>
-          </div>
-          <!-- ./col-md-7 -->
-          <div class="col-md-5"></div>
-        </div>
-        <!-- ./row -->
-        <div class="fancy-divider bigger fancy-divider-common"></div>
-      </div>
-      <!-- ./container -->
-    </div>
-    <!-- ./todo-landing -->
-
-    <div class="sponsers hidden-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-4">
-            <a href="#">
-              <img class="sponser-img" src="assets/img/sponsors/animate%20logo.svg" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <a href="#">
-              <img class="navabeq sponser-img" src="assets/img/sponsors/navabeq.svg" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <a href="#">
-              <img class="sponser-img" src="assets/img/sponsors/sage%20logo.svg" alt="">
-            </a>
-          </div>
-        </div>
-        <!-- ./row -->
-      </div>
-      <!-- ./container -->
-    </div>
-
-    <div class="sponsers-slider hidden-sm hidden-md hidden-lg">
-      <div id="owl-one" class="owl-carousel owl-theme">
-        <div class="item">
-          <a href="#">
-            <img class="center-block animate-idea" src="assets/img/sponsors/animate%20logo.svg" alt="">
+  </section>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">خانه</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            مقاله<i class="fas fa-angle-down"></i>
           </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <img class="center-block navabeq" src="assets/img/sponsors/navabeq.svg" alt="">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="d-flex vazir">
+              <a class="dropdown-item active" href="#">کیفری</a>
+              <a class="dropdown-item" href="#">حقوقی</a>
+              <a class="dropdown-item" href="#">خانواده</a>
+              <a class="dropdown-item" href="#">ثبتی</a>
+              <a class="dropdown-item" href="#">بانکی</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            مطالب حقوقی<i class="fas fa-angle-down"></i>
           </a>
+          <div class="dropdown-menu second" aria-labelledby="navbarDropdown">
+            <div class="d-flex vazir">
+              <a class="dropdown-item active" href="#">کیفری</a>
+              <a class="dropdown-item" href="#">حقوقی</a>
+              <a class="dropdown-item" href="#">خانواده</a>
+              <a class="dropdown-item" href="#">ثبتی</a>
+              <a class="dropdown-item" href="#">بانکی</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">دریافت مشاوره</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">قوانین</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">تماس با ما</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">درباره ما</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">معرفی داور و شرکت های وصول مطالبات</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <section class="stop_growing">
+    <div class="banner">
+      <img src="assets/img/backgrounds/photo_2019-05-29_19-18-31.jpg" alt="" />
+      <div class="details">
+        <div class="text vazir">
+          <h4>دکتر سید ولی نوراشرف الدین</h4>
+          <h4>وکیل پایه یک دادگستری و مدرس دانشگاه</h4>
+        </div>
+        <a class="get_advise goldbtn" href="#">دریافت مشاوره</a>
+      </div>
+      <div class="gradient"></div>
+    </div>
+    <div class="legal_doc">
+      <h4 class="title_hammer"> <img src="assets/img/svg/Hammer.svg" alt="" />مطالب حقوقی</h4>
+      <div class="container-fluid d-none d-md-block d-xl-block d-lg-block">
+
+        <div class="row">
+          <div class="col-xl-1 col-lg-1 col-md-1 d-none d-lg-block d-xl-block d-md-block"></div>
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <a class="hvr-bob" href="">
+              <img class="legal_item" src="assets/img/svg/light-Criminal.svg" alt="" />
+              <h4 class="subtitle text-center">دعاوی کیفری</h4>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <a class="hvr-bob" href="">
+              <img class="legal_item" src="assets/img/svg/light-Legal.svg" alt="" />
+              <h4 class="subtitle text-center">دعاوی حقوقی</h4>
+            </a>
+
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <a class="hvr-bob" href=""> <img class="legal_item" src="assets/img/svg/light-family.svg" alt="" />
+              <h4 class="subtitle text-center">دعاوی خانواده</h4>
+            </a>
+
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <a class="hvr-bob" href=""> <img class="legal_item" src="assets/img/svg/light-record.svg" alt="" />
+              <h4 class="subtitle text-center">دعاوی ثبتی</h4>
+            </a>
+
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <a class="hvr-bob" href=""> <img class="legal_item" src="assets/img/svg/light-bank.svg" alt="" />
+              <h4 class="subtitle text-center">دعاوی بانکی</h4>
+            </a>
+
+          </div>
+
+          <div class="col-xl-1 col-lg-1 col-md-1 d-none d-lg-block d-xl-block d-md-block"></div>
+        </div>
+      </div>
+      <div id="owl-one" class="owl-carousel owl-theme fix-arrows owl-one">
+        <div class="item">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href=""> <img class="legal_item" src="assets/img/svg/light-Criminal.svg" alt="" />
+                  <h4 class="subtitle text-center">دعاوی کیفری</h4>
+                </a>
+
+              </div>
+              <div class="col-sm-4">
+                <a href=""> <img class="legal_item" src="assets/img/svg/light-Legal.svg" alt="" />
+                  <h4 class="subtitle text-center">دعاوی حقوقی</h4>
+                </a>
+
+              </div>
+              <div class="col-sm-4">
+                <a href=""> <img class="legal_item" src="assets/img/svg/light-family.svg" alt="" />
+                  <h4 class="subtitle text-center">دعاوی خانواده</h4>
+                </a>
+
+              </div>
+            </div>
+          </div>
         </div>
         <div class="item">
-          <a href="#">
-            <img class="center-block" src="assets/img/sponsors/sage%20logo.svg" alt="">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href=""> <img class="legal_item" src="assets/img/svg/light-record.svg" alt="" />
+                  <h4 class="subtitle text-center">دعاوی ثبتی</h4>
+                </a>
+
+              </div>
+              <div class="col-sm-6">
+                <a href=""> <img class="legal_item" src="assets/img/svg/light-bank.svg" alt="" />
+                  <h4 class="subtitle text-center">دعاوی بانکی</h4>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="owl-two" class="owl-carousel owl-theme fix-arrows owl-one">
+        <div class="item">
+          <a href=""> <img class="legal_item" src="assets/img/svg/light-Criminal.svg" alt="" />
+            <h4 class="subtitle text-center">دعاوی کیفری</h4>
+          </a>
+
+        </div>
+        <div class="item">
+          <a href=""> <img class="legal_item" src="assets/img/svg/light-Legal.svg" alt="" />
+            <h4 class="subtitle text-center">دعاوی حقوقی</h4>
+          </a>
+
+        </div>
+        <div class="item">
+          <a href=""> <img class="legal_item" src="assets/img/svg/light-family.svg" alt="" />
+            <h4 class="subtitle text-center">دعاوی خانواده</h4>
+          </a>
+
+        </div>
+        <div class="item">
+          <a href=""> <img class="legal_item" src="assets/img/svg/light-record.svg" alt="" />
+            <h4 class="subtitle text-center">دعاوی ثبتی</h4>
+          </a>
+
+        </div>
+        <div class="item">
+          <a href="">
+            <img class="legal_item" src="assets/img/svg/light-bank.svg" alt="" />
+            <h4 class="subtitle text-center">دعاوی بانکی</h4>
           </a>
         </div>
       </div>
     </div>
-    <img class="img-responsive wave-bottom" src="assets/img/backgrounds/wave-4-01.png" alt="" />
-    <img class="img-responsive wave-bottom-xs" src="assets/img/backgrounds/wave-responsive-01.png" alt="" />
+    </div>
+  </section>
+  <a class="get_advise_asap" href="#">
+    <div class="text">
+      <h4><img src="assets/img/svg/Group 14.svg" alt="" />برای دریافت زمان مشاوره کلیک کنید</h4>
 
-  </main>
-
-  <footer class="bg-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1 col-lg-2"></div>
-        <div class="col-md-4 col-lg-3">
-          <div class="information">
-            <div class="brand">
-              <h3>درباره انیمیتدآیدیا</h3>
-              <img src="assets/img/logo/8.svg" alt="" />
+    </div>
+  </a>
+  <section class="stop_growing">
+    <div class="new_docs">
+      <h4 class="title_hammer"> <img src="assets/img/svg/Hammer.svg" alt="" />مطالب جدید</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="new_doc_item">
+                  <div class="special">
+                    <p>ویژه</p>
+                    <div class="triangle"></div>
+                  </div>
+                  <a href="#"><img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt=""></a>
+                  <div class="text">
+                    <a href="#">ورم ایپسوم متن ساختگی با تولیدسادگی
+                      نامفهوم از صنعت چاپ</a>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                      از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                  </div>
+                </div>
+                <a class="get_advise goldbtn" href="#">ادامه متن</a>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="new_doc_item">
+                  <div class="special">
+                    <p>ویژه</p>
+                    <div class="triangle"></div>
+                  </div>
+                  <a href="#"><img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt=""></a>
+                  <div class="text">
+                    <a href="#">ورم ایپسوم متن ساختگی با تولیدسادگی
+                      نامفهوم از صنعت چاپ</a>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                      از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                  </div>
+                </div>
+                <a class="get_advise goldbtn" href="#">ادامه متن</a>
+              </div>
             </div>
-            <div class="content">
-              <p>تیم انیمیشن سازی انیمیتد آیدیا مفتخر است تا محصولات و خدمات شما را به بهترین شکل در شبکه های اجتماعی ارائه دهد.</p>
-              <a class="btn btn-default samim-font fancy-btn" href="#">بیشتر</a>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="new_doc_item">
+                  <a href="#"><img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" /></a>
+                  <div class="text">
+                    <a href="#">ورم ایپسوم متن ساختگی با تولیدسادگی
+                      نامفهوم از صنعت چاپ</a>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                      از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                  </div>
+                </div>
+                <a class="get_advise goldbtn" href="#">ادامه متن</a>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="new_doc_item">
+                  <div class="special">
+                    <p>ویژه</p>
+                    <div class="triangle"></div>
+                  </div>
+                  <a href="#"><img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" /></a>
+                  <div class="text">
+                    <a href="#">ورم ایپسوم متن ساختگی با تولیدسادگی
+                      نامفهوم از صنعت چاپ</a>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                      از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                  </div>
+                </div>
+                <a class="get_advise goldbtn" href="#">ادامه متن</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 d-none d-lg-block d-xl-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="new_doc_vertical top">
+                  <div class="image">
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="new_doc_vertical">
+                  <div class="image">
+                    <div class="special">
+                      <p>ویژه</p>
+                      <div class="triangle"></div>
+                    </div>
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="new_doc_vertical">
+                  <div class="image">
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="new_doc_vertical bottom">
+                  <div class="image">
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-block d-lg-none d-xl-none">
+            <div id="owl-three" class="owl-carousel owl-theme fix-arrows owl-one">
+              <div class="item">
+                <div class="new_doc_vertical">
+                  <div class="image">
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="new_doc_vertical">
+                  <div class="image">
+                    <div class="special">
+                      <p>ویژه</p>
+                      <div class="triangle"></div>
+                    </div>
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="new_doc_vertical">
+                  <div class="image">
+                    <img src="assets/img/backgrounds/law-legal-book-ss-1920.jpg" alt="" />
+                  </div>
+                  <div class="text">
+                    <a href="#">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت چاپ</a>
+                    <a class="get_advise goldbtn" href="#">ادامه متن</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <div class="contact-us contact-us-footer">
-            <h4>تماس با ما</h4>
-            <ul class="list-unstyled">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="background">
+      <di class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5> .لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</h5>
+          </div>
+          <div class="col-12"><a class="owner" href="#">
+              <p>دکتر سید ولی نوراشرف الدین</p>
+            </a></div>
+          <div class="col-12">
+            <ul>
               <li>
-                <p>تهران - خیابان شریعتی - بالاتر از حسینیه ارشاد - جنب بیمارستان مفید - نبش بیگدلی پلاک ۱۱۴۲ - طبقه سوم</p>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </li>
               <li>
-                <p class="phone-number">۰۲۱۲۲۹۰۲۴۹۳</p>
+                <a href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
               </li>
-              <li>
-                <p class="phone-number">۰۲۱۲۲۹۱۳۴۱۰</p>
-              </li>
-              <li>
-                <a href="#">animatedidea@gmail.com</a>
-              </li>
+
             </ul>
           </div>
+          <hr>
+          <div class="col-12">
+            <p class="copyright">copyright</p>
+          </div>
         </div>
-      </div>
+      </di>
     </div>
   </footer>
 
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <ul class="list-unstyled list-inline">
-            <li>
-              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-xs-6">
-          <p class="text-left">Copyright 2018</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <script src="assets/features/main/js/jquery.min.js"></script>
+  <script src="assets/features/font-awsome/js/all.min.js"></script>
   <script src="assets/features/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/features/bootsnav/js/bootsnav.js"></script>
   <script src="assets/features/stickyjs/jquery.sticky.js"></script>
   <script src="assets/features/owl-carousel/js/owl.carousel.js"></script>
   <script src="assets/features/main/js/main.js"></script>

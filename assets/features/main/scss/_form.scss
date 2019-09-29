@@ -1,0 +1,51 @@
+form {
+    margin-top: 60px;
+    .title {
+        text-align: center;
+        font-family: 'vazirBold';
+        margin-bottom: 35px;
+        padding: 0 15px;
+        h4 {
+            line-height: 50px;
+            color: #223555;
+            font-size: 27px;
+        }
+    }
+    
+    input.form-control {
+        padding: 30px;
+        padding-right: 50px;
+        font-family: 'vazir';
+        margin-bottom: 40px;
+    }
+    img {
+        position: absolute;
+        top: 16px;
+        width: 28px;
+        right: 24px;
+    }
+    select {
+        height: 62px !important;
+        font-family: 'vazir';
+        color: #848282 !important;
+        margin-bottom: 40px;
+        font-size: 17px !important;
+    }
+    textarea {
+        padding-right: 50px !important;
+        padding-top: 18px !important;
+        font-family: 'vazir';
+    }
+    button {
+        font-family: 'vazir';
+        width: 300px;
+        padding: 20px !important;
+        background-color: #B89B5E !important;
+        border: none !important;
+        margin-right: auto;
+        display: block !important;
+        margin-top: 22px;
+        margin-bottom: 50px;
+    }
+
+}

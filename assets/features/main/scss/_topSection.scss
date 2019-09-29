@@ -1,0 +1,39 @@
+.top_quote {
+    background-color: #B89B5E;
+    padding: 20px 0;
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
+
+
+.top_info {
+    z-index: 1;
+    position: static;
+    padding-bottom: 30px;
+
+    img {
+        width: 75px;
+        margin-left: 20px;
+    }
+
+
+
+    .col-xl-4 {
+        &:first-child {
+            p {
+                text-align: center;
+                width: 245px;
+                padding: 35px;
+                font-size: 17px;
+                margin-right: auto;
+                line-height: 30px;
+                color: #848282;
+            }
+        }
+    }
+}
